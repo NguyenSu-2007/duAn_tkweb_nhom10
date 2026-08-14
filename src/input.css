@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    /* Colors */
+    --color-brand-600: #df6951;
+    --color-accent-500: #6246e5;
+    --color-yellow: #f0bb1f;
+    --color-orange: #f15a2b;
+    --color-blue: #006380;
+
+    --color-ink: #181e4b;
+    --color-muted: #5e6282;
+    --color-text-2: #84829a;
+
+    --color-surface: #f7f7f7;
+    --color-pale-yellow: #fff1da;
+    --color-line: #e5e5ea;
+
+    /* Fonts */
+    --font-display: "Volkhov", serif;
+    --font-body: "Poppins", sans-serif;
+
+    /* Radius */
+    --radius-card: 1rem;
+}

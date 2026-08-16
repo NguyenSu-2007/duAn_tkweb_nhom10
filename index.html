@@ -1,290 +1,444 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="vi" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Travel Booking</title>
-
-    <link rel="stylesheet" href="./dist/output.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel - Sightseeing Tours</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/output.css">
 </head>
+<body class="font-body text-[#5E6282] bg-white antialiased overflow-x-hidden">
 
-<body>
-   <header
-    class="h-[442px] bg-cover bg-center bg-no-repeat"
-    style="background-image: url('./assets/img/hero-bg.png');"
->
-<nav class="mx-auto flex h-[67px] w-[1200px] items-center justify-between">
+  <!-- ==================== HEADER ==================== -->
+  <header class="absolute top-0 left-0 w-full z-50 py-6 px-4 lg:px-16">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="relative flex items-center">
+        <span class="font-display font-bold text-2xl text-white tracking-wide z-10">Travel</span>
+        <img src="assets/img/Arrow 05.png" alt="" class="w-10 absolute -bottom-2 -left-1">
+      </a>
 
-    <a
-        href="#"
-        class="font-display text-[24px] font-bold text-white"
-    >
-        Travel
-    </a>
-
-    <ul class="flex items-center gap-[48px]">
-
-        <li>
-            <a
-                href="#"
-                class="text-[14px] font-medium text-white"
-            >
-                Home
-            </a>
-        </li>
-
-        <li>
-            <a
-                href="#"
-                class="text-[14px] font-medium text-white"
-            >
-                About
-            </a>
-        </li>
-
-        <li>
-            <a
-                href="#"
-                class="text-[14px] font-medium text-white"
-            >
-                Services
-            </a>
-        </li>
-
-        <li>
-            <a
-                href="#"
-                class="text-[14px] font-medium text-white"
-            >
-                Upcomming Packages
-            </a>
-        </li>
-
-    </ul>
-
-    <a
-        href="#"
-        class="flex h-[58px] w-[152px] items-center justify-center rounded-[5px] bg-brand-600 text-[14px] font-medium text-white"
-    >
-        Get in Touch
-    </a>
-
-</nav>
-<div class="absolute left-1/2 top-[135px] w-[1200px] -translate-x-1/2">
-
-    <h1 class="w-[400px] font-body text-[42px] font-bold leading-[1.16] text-white">
-        No matter where you’re going to, we’ll take you there
-    </h1>
-<div class="absolute left-1/2 top-[310px] flex h-[70px] w-[780px] -translate-x-1/2 items-center rounded-[10px] bg-white px-6 shadow-lg">
-
-    <!-- Where to? -->
-    <div class="flex w-[220px] items-center gap-3 border-r border-gray-200">
-        <span class="text-brand-600"></span>
-
-        <div>
-            <p class="text-[14px] font-medium text-ink">
-                Where to?
-            </p>
-            <p class="text-[12px] text-muted">
-                Search your destination
-            </p>
+      <nav aria-label="Main Navigation" class="hidden md:flex items-center gap-8 font-medium text-sm text-white">
+        <a href="index.html" class="text-[#DF6951] font-semibold">Home</a>
+        <a href="about.html" class="hover:text-[#DF6951] transition-colors">About</a>
+        <div class="relative group cursor-pointer py-2">
+          <span class="flex items-center gap-1 hover:text-[#DF6951] transition-colors">
+            Services
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </span>
+          <div class="absolute top-full left-0 hidden group-hover:block w-48 bg-white text-[#181E4B] rounded-xl shadow-xl py-2 px-1 border border-slate-100">
+            <a href="tours.html" class="block px-4 py-2 text-xs hover:bg-orange-50 hover:text-[#DF6951] rounded-lg">Honeymoon Packages</a>
+            <a href="tours.html" class="block px-4 py-2 text-xs hover:bg-orange-50 hover:text-[#DF6951] rounded-lg">Tours Packages</a>
+          </div>
         </div>
+        <a href="tours.html" class="hover:text-[#DF6951] transition-colors">Upcoming Packages</a>
+      </nav>
+
+      <div class="hidden md:block">
+        <a href="contact.html" class="bg-[#DF6951] hover:bg-[#c85741] text-white text-sm font-medium px-6 py-2.5 rounded-lg shadow-md transition-all inline-block">
+          Get in Touch
+        </a>
+      </div>
     </div>
+  </header>
 
-    <!-- Travel Type -->
-    <div class="flex w-[220px] items-center gap-3 border-r border-gray-200 pl-6">
-        <span class="text-brand-600"></span>
+  <main id="main">
 
-        <div>
-            <p class="text-[14px] font-medium text-ink">
-                Travel Type
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="relative min-h-screen flex items-center pt-28 pb-16 bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/img/hero-bg.png');">
+      <div class="max-w-7xl mx-auto px-4 lg:px-16 w-full text-white relative">
+        <div class="max-w-2xl">
+          <img src="assets/img/Vector 1.png" alt="" class="w-16 mb-4 object-contain">
+          <h1 class="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-8">
+            No matter where you’re going to, we’ll take you there
+          </h1>
+
+          <!-- Form Search Filter -->
+          <div class="bg-white/20 backdrop-blur-md p-3 sm:p-4 rounded-2xl shadow-2xl border border-white/30 max-w-xl">
+            <form class="grid grid-cols-1 sm:grid-cols-4 gap-2 items-center">
+              <div class="px-3 py-1.5 border-b sm:border-b-0 sm:border-r border-white/30">
+                <input type="text" placeholder="Where to?" class="w-full bg-transparent text-white placeholder-white/80 text-sm focus:outline-none">
+              </div>
+              <div class="px-3 py-1.5 border-b sm:border-b-0 sm:border-r border-white/30">
+                <select class="w-full bg-transparent text-white text-sm focus:outline-none [&>option]:text-[#181E4B]">
+                  <option value="">Travel Type</option>
+                  <option value="romantic">Romantic</option>
+                </select>
+              </div>
+              <div class="px-3 py-1.5">
+                <select class="w-full bg-transparent text-white text-sm focus:outline-none [&>option]:text-[#181E4B]">
+                  <option value="">Duration</option>
+                </select>
+              </div>
+              <button type="submit" class="bg-[#DF6951] hover:bg-[#c85741] text-white text-sm font-semibold py-3 rounded-xl transition-colors shadow-lg">
+                Submit
+              </button>
+            </form>
+          </div>
+
+          <!-- Users Count -->
+          <div class="mt-8 flex items-center gap-4">
+            <img src="assets/img/Group 81.png" alt="Users Group" class="h-8 object-contain shrink-0">
+            <p class="text-xs text-white/90 font-medium max-w-xs leading-snug">
+              2,500 people booked Tomorrowland Event in last 24 hours
             </p>
-            <p class="text-[12px] text-muted">
-                Select your type
-            </p>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <!-- Duration -->
-    <div class="flex w-[180px] items-center gap-3 pl-6">
-        <span class="text-brand-600"></span>
+    <!-- ==================== PARTNERS LOGO ==================== -->
+    <section class="py-10 bg-slate-50/50 border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 lg:px-16 flex flex-wrap items-center justify-between gap-6 opacity-80">
+        <img src="assets/img/image 909.png" alt="Emirates" class="h-6 object-contain">
+        <img src="assets/img/Mask group.png" alt="Trivago" class="h-6 object-contain">
+        <img src="assets/img/Mask group (1).png" alt="Airbnb" class="h-6 object-contain">
+        <img src="assets/img/Mask group (2).png" alt="Turkish Airlines" class="h-6 object-contain">
+        <img src="assets/img/image 912.png" alt="Swiss" class="h-6 object-contain">
+      </div>
+    </section>
 
-        <div>
-            <p class="text-[14px] font-medium text-ink">
-                Duration
-            </p>
-            <p class="text-[12px] text-muted">
-                Select duration
-            </p>
+    <!-- ==================== SERVICES ==================== -->
+    <section class="py-20 px-4 lg:px-16 max-w-7xl mx-auto text-center">
+      <p class="text-[#DF6951] uppercase font-semibold text-xs tracking-widest mb-2">CATEGORY</p>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-[#181E4B] mb-16">We Offer Best Services</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="p-8 rounded-3xl bg-white border border-slate-100 hover:shadow-2xl transition-all">
+          <img src="assets/img/tour-guide 1.png" alt="" class="w-12 h-12 mx-auto mb-6 object-contain">
+          <h3 class="font-bold text-lg text-[#181E4B] mb-3">Guided Tours</h3>
+          <p class="text-xs text-[#5E6282] leading-relaxed">sunt qui mepeliat saepe quo velit aperiam id aliquam placeat.</p>
         </div>
-    </div>
 
-    <!-- Submit -->
-    <button
-        class="ml-auto h-[48px] rounded-[5px] bg-brand-600 px-7 text-[14px] font-medium text-white"
-    >
-        Submit
-    </button>
+        <div class="p-8 rounded-3xl bg-white border border-slate-100 shadow-xl relative">
+          <!-- Khung cam phía dưới icon (Rectangle 157.png) -->
+          <div class="absolute -bottom-3 -left-3 w-12 h-12 -z-10">
+             <img src="assets/img/Rectangle 157.png" alt="" class="w-full h-full object-contain">
+          </div>
+          <img src="assets/img/travelling 1.png" alt="" class="w-12 h-12 mx-auto mb-6 object-contain">
+          <h3 class="font-bold text-lg text-[#181E4B] mb-3">Best Flights Options</h3>
+          <p class="text-xs text-[#5E6282] leading-relaxed">sunt qui mepeliat saepe quo velit aperiam id aliquam placeat.</p>
+        </div>
 
-</div>
-</div>
-</header>
-   
+        <div class="p-8 rounded-3xl bg-white border border-slate-100 hover:shadow-2xl transition-all">
+          <img src="assets/img/hands 1.png" alt="" class="w-12 h-12 mx-auto mb-6 object-contain">
+          <h3 class="font-bold text-lg text-[#181E4B] mb-3">Religious Tours</h3>
+          <p class="text-xs text-[#5E6282] leading-relaxed">sunt qui mepeliat saepe quo velit aperiam id aliquam placeat.</p>
+        </div>
 
-    <main>
+        <div class="p-8 rounded-3xl bg-white border border-slate-100 hover:shadow-2xl transition-all">
+          <img src="assets/img/medical-team 1.png" alt="" class="w-12 h-12 mx-auto mb-6 object-contain">
+          <h3 class="font-bold text-lg text-[#181E4B] mb-3">Medical Insurance</h3>
+          <p class="text-xs text-[#5E6282] leading-relaxed">sunt qui mepeliat saepe quo velit aperiam id aliquam placeat.</p>
+        </div>
+      </div>
+    </section>
 
-       <section class="mx-auto flex w-[1200px] items-center gap-4 pt-20 pb-10">
+    <!-- ==================== HONEYMOON SPECIAL ==================== -->
+    <section class="py-16 px-4 lg:px-16 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="flex justify-center">
+          <img src="assets/img/honeymoon-special.png" alt="Honeymoon Special" class="w-full max-w-md object-contain">
+        </div>
+        <div>
+          <p class="text-[#DF6951] uppercase font-semibold text-xs tracking-widest mb-2">HONEYMOON SPECIALS</p>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-[#181E4B] mb-6">Our Romantic Tropical Destinations</h2>
+          <p class="text-sm text-[#5E6282] leading-relaxed mb-8">
+            Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internas. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus illum aut optio quibusdam!
+          </p>
+          <a href="tours.html" class="bg-[#DF6951] text-white text-sm font-semibold px-8 py-3.5 rounded-xl shadow-lg inline-block">View Packages</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="flex -space-x-3">
-        <div class="h-10 w-10 rounded-full bg-gray-300"></div>
-        <div class="h-10 w-10 rounded-full bg-gray-400"></div>
-        <div class="h-10 w-10 rounded-full bg-gray-500"></div>
-        <div class="h-10 w-10 rounded-full bg-gray-600"></div>
-        <div class="h-10 w-10 rounded-full bg-gray-700"></div>
-    </div>
+    <!-- ==================== BOOKING STEPS ==================== -->
+    <section class="py-20 px-4 lg:px-16 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-[#DF6951] uppercase font-semibold text-xs tracking-widest mb-2">Fast & Easy</p>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-[#181E4B] mb-10">Get Your Favourite Resort Bookings</h2>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-xl bg-[#F1A501] text-white flex items-center justify-center shrink-0 font-bold">1</div>
+              <div>
+                <h3 class="font-bold text-[#181E4B]">Choose Destination</h3>
+                <p class="text-xs text-[#5E6282]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-xl bg-[#DF6951] text-white flex items-center justify-center shrink-0 font-bold">2</div>
+              <div>
+                <h3 class="font-bold text-[#181E4B]">Check Availability</h3>
+                <p class="text-xs text-[#5E6282]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-xl bg-[#006380] text-white flex items-center justify-center shrink-0 font-bold">3</div>
+              <div>
+                <h3 class="font-bold text-[#181E4B]">Let’s Go</h3>
+                <p class="text-xs text-[#5E6282]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <p class="text-sm text-muted">
-        People booked this trip
-    </p>
+        <!-- Hawaii Card + Popup Rome + Máy bay -->
+        <div class="relative flex justify-center">
+          <div class="bg-white p-4 rounded-3xl shadow-2xl border border-slate-100 w-full max-w-sm relative z-10">
+            <img src="assets/img/Rectangle 17.png" alt="Trip to Hawaii" class="rounded-2xl h-48 w-full object-cover mb-4">
+            <h3 class="font-bold text-[#181E4B] text-base">Trip to Hawaii</h3>
+            <p class="text-xs text-[#5E6282] my-1">14-29 June | by JR Martir</p>
+            <div class="flex items-center justify-between mt-4 pt-3 border-t border-slate-100 text-xs text-[#5E6282]">
+              <span>60 people are interested</span>
+              <span class="text-[#DF6951]">♥</span>
+            </div>
 
-</section>
-<section class="mx-auto w-[1200px] py-20">
+        
+            <div class="absolute -right-6 bottom-10 bg-white p-3 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3 z-20">
+              <img src="assets/img/Mask Group (3).png" alt="Switzerland Flag" class="w-8 h-8 rounded-full object-cover">
+              <div>
+                <span class="text-[10px] text-slate-400">Ongoing</span>
+                <h4 class="text-xs font-bold text-[#181E4B]">Trip to rome</h4>
+                <p class="text-[10px] text-[#DF6951] font-semibold mt-1"><span class="text-[#181E4B]">40%</span> completed</p>
+                <div class="w-24 bg-slate-100 h-1 rounded-full mt-1 overflow-hidden">
+                  <div class="bg-[#DF6951] h-full w-[40%]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Plane Background (image 872.png) -->
+          <img src="assets/img/image 872.png" alt="" class="absolute -top-10 -right-4 w-48 pointer-events-none z-0">
+        </div>
+      </div>
+    </section>
 
-    <!-- Title -->
-    <div class="mb-14 text-center">
-        <p class="font-body text-sm font-semibold text-brand-600">
-            CATEGORY
+    <!-- ==================== BANNER SEPRATIR ==================== -->
+    <section class="my-16 py-24 bg-cover bg-center text-center text-white relative" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/Sepratir.png');">
+      <div class="max-w-4xl mx-auto px-4">
+      </div>
+    </section>
+
+    <!-- ==================== EUROPE SIGHTSEEING TOURS ==================== -->
+    <section class="py-16 px-4 lg:px-16 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-[#DF6951] uppercase font-semibold text-xs tracking-widest mb-2">PROMOTION</p>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-[#181E4B] mb-6">
+            We Provide You Best Europe Sightseeing Tours
+          </h2>
+          <p class="text-sm text-[#5E6282] leading-relaxed mb-8">
+            Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internas. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus illum aut optio quibusdam!
+          </p>
+          <a href="tours.html" class="bg-[#DF6951] text-white text-sm font-semibold px-8 py-3.5 rounded-xl shadow-lg inline-block">View Packages</a>
+
+          <!-- Destination Thumbnail Gallery -->
+          <div class="grid grid-cols-4 gap-3 mt-10">
+            <div class="relative rounded-2xl overflow-hidden h-24 shadow-md">
+              <img src="assets/img/Destination 1.png" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-2 right-2 bg-[#DF6951] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-md">$700</span>
+            </div>
+            <div class="relative rounded-2xl overflow-hidden h-24 shadow-md">
+              <img src="assets/img/Destination 2.png" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-2 right-2 bg-[#DF6951] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-md">$800</span>
+            </div>
+            <div class="relative rounded-2xl overflow-hidden h-24 shadow-md">
+              <img src="assets/img/Destination 3 (1).png" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-2 right-2 bg-[#DF6951] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-md">$500</span>
+            </div>
+            <div class="relative rounded-2xl overflow-hidden h-24 shadow-md">
+              <img src="assets/img/Destination 3.png" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-2 right-2 bg-[#DF6951] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-md">$400</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Eiffel Arch Image (Illustration.png) -->
+        <div class="relative flex justify-center">
+          <div class="w-full max-w-sm h-[460px] rounded-t-[200px] rounded-b-3xl overflow-hidden shadow-2xl relative">
+            <img src="assets/img/Illustration.png" alt="Eiffel Tower Arch" class="w-full h-full object-cover">
+            <span class="absolute right-[-45px] top-1/2 -rotate-90 text-white/70 font-bold tracking-widest text-lg pointer-events-none">Breath Taking Viewes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPLORE NATURE & CITIES ==================== -->
+    <section class="py-12 px-4 lg:px-16 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 rounded-3xl overflow-hidden shadow-2xl">
+        <div class="relative py-24 px-8 bg-cover bg-center text-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/img/Rectangle 19301.png');">
+          <p class="text-xs uppercase font-semibold tracking-widest mb-2">PROMOTION</p>
+          <h3 class="font-display font-bold text-3xl mb-6">Explore Nature</h3>
+          <a href="tours.html" class="border border-white text-white text-xs font-semibold px-6 py-2.5 rounded-xl hover:bg-white hover:text-[#181E4B] transition-colors inline-block">View Packages</a>
+        </div>
+        <div class="relative py-24 px-8 bg-cover bg-center text-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/img/Rectangle 19302.png');">
+          <p class="text-xs uppercase font-semibold tracking-widest mb-2">PROMOTION</p>
+          <h3 class="font-display font-bold text-3xl mb-6">Explore Cities</h3>
+          <a href="tours.html" class="border border-white text-white text-xs font-semibold px-6 py-2.5 rounded-xl hover:bg-white hover:text-[#181E4B] transition-colors inline-block">View Packages</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TRENDING PACKAGES ==================== -->
+    <section class="py-16 px-4 lg:px-16 max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-[#DF6951] uppercase font-semibold text-xs tracking-widest mb-2">TRENDY</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-[#181E4B]">Our Trending Tour Packages</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Switzerland -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100">
+          <div class="relative h-60">
+            <img src="assets/img/Rectangle 19305.png" alt="Switzerland" class="w-full h-full object-cover">
+            <!-- Cờ Thụy Sĩ CHUẨN: Ellipse 623.png -->
+            <img src="assets/img/Ellipse 623.png" alt="Switzerland Flag" class="absolute -bottom-5 left-6 w-11 h-11 rounded-full border-2 border-white shadow-md object-cover">
+          </div>
+          <div class="p-6 pt-8">
+            <div class="flex items-center gap-4 text-xs text-[#5E6282] mb-2">
+              <span> 8 Days</span>
+              <span> 25 People Going</span>
+            </div>
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="font-bold text-xl text-[#181E4B]">Switzerland</h3>
+              <div class="text-amber-400 text-xs">★★★★★</div>
+            </div>
+            <p class="text-xs text-[#5E6282] mb-4">Europe</p>
+            <p class="text-[#DF6951] font-bold text-lg mb-4">1,000 $ <span class="text-xs text-slate-400 line-through">1,200 $</span></p>
+            <a href="tour-detail.html" class="block text-center bg-[#DF6951] text-white text-sm font-semibold py-2.5 rounded-xl hover:bg-[#c85741] transition-colors">Explore Now</a>
+          </div>
+        </div>
+
+        <!-- Amazon -->
+        <div class="bg-white rounded-3xl overflow-hidd  en shadow-lg border border-slate-100">
+          <div class="relative h-60">
+            <img src="assets/img/Rectangle 19305 (1).png" alt="Amazon" class="w-full h-full object-cover">
+            <!-- Cờ Brazil CHUẨN: Ellipse 623 (1).png -->
+            <img src="assets/img/Ellipse 623 (1).png" alt="Brazil Flag" class="absolute -bottom-5 left-6 w-11 h-11 rounded-full border-2 border-white shadow-md object-cover">
+          </div>
+          <div class="p-6 pt-8">
+            <div class="flex items-center gap-4 text-xs text-[#5E6282] mb-2">
+              <span> 8 Days</span>
+              <span> 30 People Going</span>
+            </div>
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="font-bold text-xl text-[#181E4B]">Amazon</h3>
+              <div class="text-amber-400 text-xs">★★★★★</div>
+            </div>
+            <p class="text-xs text-[#5E6282] mb-4">Brazil</p>
+            <p class="text-[#DF6951] font-bold text-lg mb-4">1,223 $ <span class="text-xs text-slate-400 line-through">1,400 $</span></p>
+            <a href="tour-detail.html" class="block text-center bg-[#DF6951] text-white text-sm font-semibold py-2.5 rounded-xl hover:bg-[#c85741] transition-colors">Explore Now</a>
+          </div>
+        </div>
+
+        <!-- Giza -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100">
+          <div class="relative h-60">
+            <img src="assets/img/Rectangle 19305 (2).png" alt="Giza" class="w-full h-full object-cover">
+            <!-- Cờ Ai Cập CHUẨN: Ellipse 623 (2).png -->
+            <img src="assets/img/Ellipse 623 (2).png" alt="Egypt Flag" class="absolute -bottom-5 left-6 w-11 h-11 rounded-full border-2 border-white shadow-md object-cover">
+          </div>
+          <div class="p-6 pt-8">
+            <div class="flex items-center gap-4 text-xs text-[#5E6282] mb-2">
+              <span> 8 Days</span>
+              <span> 155 People Going</span>
+            </div>
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="font-bold text-xl text-[#181E4B]">Giza</h3>
+              <div class="text-amber-400 text-xs">★★★★★</div>
+            </div>
+            <p class="text-xs text-[#5E6282] mb-4">Egypt</p>
+            <p class="text-[#DF6951] font-bold text-lg mb-4">1,200 $ <span class="text-xs text-slate-400 line-through">1,500 $</span></p>
+            <a href="tour-detail.html" class="block text-center bg-[#DF6951] text-white text-sm font-semibold py-2.5 rounded-xl hover:bg-[#c85741] transition-colors">Explore Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="py-20 px-4 lg:px-16 max-w-7xl mx-auto text-center relative bg-slate-50/50 rounded-3xl my-12">
+      <!-- Mũ & Máy ảnh góc dưới trái (Travel_Concepts_2 1.png) -->
+      <img src="assets/img/Travel_Concepts_2 1.png" alt="" class="absolute bottom-4 left-4 w-28 object-contain pointer-events-none">
+
+      <p class="text-[#DF6951] uppercase font-semibold text-xs tracking-widest mb-2">PROMOTION</p>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-[#181E4B] mb-12">See What Our Clients Say About Us</h2>
+
+      <div class="max-w-2xl mx-auto bg-white p-8 rounded-3xl shadow-xl relative">
+        <!-- Avatar khách hàng (Mask Group (3).png) -->
+        <img src="assets/img/Ellipse 624.png" alt="Christine Beckham" class="w-14 h-14 rounded-full mx-auto -mt-14 border-4 border-white shadow-md object-cover">
+
+        <p class="text-xs text-[#5E6282] leading-relaxed my-6 italic">
+          "Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident qua possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis."
         </p>
 
-        <h2 class="mt-2 font-display text-4xl font-bold text-heading">
-            We Offer Best Services
-        </h2>
+        <h4 class="font-bold text-[#181E4B] text-sm">Christine Beckham - <span class="font-normal text-slate-400">Designer</span></h4>
+
+        <!-- Nut Navigation -->
+        <button class="absolute left-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center hover:bg-[#DF6951] hover:text-white transition-colors">←</button>
+        <button class="absolute right-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center hover:bg-[#DF6951] hover:text-white transition-colors">→</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-white pt-16 pb-8 border-t border-slate-100 text-xs relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 lg:px-16 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12 relative z-10">
+      <div>
+        <a href="index.html" class="font-display font-bold text-2xl text-[#181E4B] block mb-2">Travel.</a>
+        <p class="text-[#5E6282] leading-relaxed mb-4">Travel helps companies manage payments easily.</p>
+        <div class="flex gap-3 text-[#DF6951] font-bold text-sm">
+          <a href="#">
+            <img src="./assets/img/052-linkedin.png" alt="">
+          </a>
+          <a href="#"> <img src="./assets/img/025-messenger.png" alt=""></a>
+          <a href="#"> <img src="./assets/img/096-twitter.png" alt=""></a>
+          <a href="#"> <img src="./assets/img/097-twoo.png" alt=""></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-[#181E4B] text-sm mb-4">Company</h4>
+        <ul class="space-y-2.5 text-[#5E6282]">
+          <li><a href="about.html" class="hover:text-[#DF6951]">About Us</a></li>
+          <li><a href="#" class="hover:text-[#DF6951]">Careers</a></li>
+          <li><a href="#" class="hover:text-[#DF6951]">Blog</a></li>
+          <li><a href="#" class="hover:text-[#DF6951]">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-[#181E4B] text-sm mb-4">Destinations</h4>
+        <ul class="space-y-2.5 text-[#5E6282]">
+          <li><a href="tours.html" class="hover:text-[#DF6951]">Maldives</a></li>
+          <li><a href="tours.html" class="hover:text-[#DF6951]">Los Angelas</a></li>
+          <li><a href="tours.html" class="hover:text-[#DF6951]">Las Vegas</a></li>
+          <li><a href="tours.html" class="hover:text-[#DF6951]">Torronto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-[#181E4B] text-sm mb-4">Join Our Newsletter</h4>
+        <form class="flex gap-2 mb-2">
+          <input type="email" placeholder="Your email address" class="bg-slate-100 px-3 py-2 rounded-lg text-xs w-full focus:outline-none text-[#181E4B]">
+          <button type="submit" class="bg-[#DF6951] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#c85741]">Subscribe</button>
+        </form>
+        <p class="text-[10px] text-slate-400">* Will send you weekly updates for your better tour packages.</p>
+      </div>
     </div>
 
-    <!-- Services -->
-    <div class="grid grid-cols-4 gap-8">
-
-        <!-- Guided Tours -->
-        <div class="flex flex-col items-center text-center">
-            <div class="mb-5 flex h-16 w-16 items-center justify-center">
-                <img
-                    src="./assets/img/tour-guide 1.png"
-                    alt="Guided Tours"
-                    class="h-12 w-12 object-contain"
-                >
-            </div>
-
-            <h3 class="font-body text-base font-semibold text-heading">
-                Guided Tours
-            </h3>
-
-            <p class="mt-3 w-44 font-body text-sm leading-5 text-muted">
-                sunt qui repellat saepe quo velit aperiam id aliquam placeat.
-            </p>
-        </div>
-
-
-        <!-- Best Flights Options -->
-        <div class="relative flex flex-col items-center rounded-2xl bg-white px-6 py-8 text-center shadow-card">
-
-            <div class="mb-5 flex h-16 w-16 items-center justify-center">
-                <img
-                    src="./assets/img/travelling 1.png"
-                    alt="Best Flights Options"
-                    class="h-12 w-12 object-contain"
-                >
-            </div>
-
-            <h3 class="font-body text-base font-semibold text-heading">
-                Best Flights Options
-            </h3>
-
-            <p class="mt-3 w-44 font-body text-sm leading-5 text-muted">
-                sunt qui repellat saepe quo velit aperiam id aliquam placeat.
-            </p>
-
-        </div>
-
-
-        <!-- Religious Tours -->
-        <div class="flex flex-col items-center text-center">
-            <div class="mb-5 flex h-16 w-16 items-center justify-center">
-                <img
-                    src="./assets/img/hands 1.png"
-                    alt="Religious Tours"
-                    class="h-12 w-12 object-contain"
-                >
-            </div>
-
-            <h3 class="font-body text-base font-semibold text-heading">
-                Religious Tours
-            </h3>
-
-            <p class="mt-3 w-44 font-body text-sm leading-5 text-muted">
-                sunt qui repellat saepe quo velit aperiam id aliquam placeat.
-            </p>
-        </div>
-
-
-        <!-- Medical Insurance -->
-        <div class="flex flex-col items-center text-center">
-            <div class="mb-5 flex h-16 w-16 items-center justify-center">
-                <img
-                    src="./assets/img/medical-team 1.png"
-                    alt="Medical Insurance"
-                    class="h-12 w-12 object-contain"
-                >
-            </div>
-
-            <h3 class="font-body text-base font-semibold text-heading">
-                Medical insurance
-            </h3>
-
-            <p class="mt-3 w-44 font-body text-sm leading-5 text-muted">
-                sunt qui repellat saepe quo velit aperiam id aliquam placeat.
-            </p>
-        </div>
-
+    <!-- Background phác thảo ngọn núi bên phải Footer -->
+    <div class="absolute right-0 bottom-0 opacity-15 pointer-events-none">
+      <svg width="350" height="180" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M200 20L350 200H50L200 20Z" stroke="#181E4B" stroke-width="2"/>
+        <path d="M280 80L390 200H170L280 80Z" stroke="#181E4B" stroke-width="2"/>
+      </svg>
     </div>
 
-</section>
-
-        <section>
-            <!-- Honeymoon Specials -->
-        </section>
-
-        <section>
-            <!-- Book a Trip -->
-        </section>
-
-        <section>
-            <!-- Europe Sightseeing Tours -->
-        </section>
-
-        <section>
-            <!-- Explore Packages -->
-        </section>
-
-        <section>
-            <!-- Trending Tour Packages -->
-        </section>
-
-        <section>
-            <!-- Testimonials -->
-        </section>
-
-    </main>
-
-    <footer>
-        <!-- Footer -->
-    </footer>
+    <div class="text-center pt-8 border-t border-slate-100 text-slate-400 relative z-10">
+      Copyright @ Xpro 2026. All Rights Reserved.
+    </div>
+  </footer>
 
 </body>
-
 </html>

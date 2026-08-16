@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Travel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400&family=Yesteryear&family=Poppins:wght@400;500;600;700&display=swap');
+    
+    body { font-family: 'Poppins', sans-serif; }
+    .font-volkhov { font-family: 'Volkhov', serif; }
+    .font-script { font-family: 'Yesteryear', cursive; }
+
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+      animation: spinSlow 20s linear infinite;
+    }
+  </style>
+</head>
+<body class="bg-white text-[#181E4B] overflow-x-hidden">
+
+  <!-- ==================== 1. HERO BANNER ==================== -->
+  <section class="relative bg-cover bg-center h-[580px] flex flex-col justify-between" style="background-image: url('assets/img/Rectangle 19290.png');">
+    <div class="absolute inset-0 bg-black/15"></div>
+
+    <!-- Header Navigation -->
+    <header class="relative z-10 max-w-[1400px] mx-auto w-full px-8 py-8 flex justify-between items-center text-white">
+      <a href="index.html" class="text-3xl font-bold tracking-wide">
+        Travel<span class="text-[#DF6951]">.</span>
+      </a>
+      
+      <nav class="hidden md:flex space-x-12 font-medium text-base">
+        <a href="index.html" class="hover:text-[#DF6951] transition-colors">Home</a>
+        <a href="about.html" class="border-b-2 border-[#DF6951] pb-1 font-semibold">About</a>
+        <a href="#" class="hover:text-[#DF6951] transition-colors">Services ▾</a>
+        <a href="#" class="hover:text-[#DF6951] transition-colors">Upcoming Packages</a>
+      </nav>
+
+      <a href="#" class="bg-[#DF6951] text-white px-7 py-3 rounded-xl font-medium hover:bg-[#c85740] transition-colors shadow-lg text-sm">
+        Get in Touch
+      </a>
+    </header>
+
+    <!-- Title chính giữa -->
+    <div class="relative z-10 text-center pb-28">
+      <p class="text-white uppercase tracking-[0.25em] text-xs font-semibold mb-2">READ</p>
+      <h1 class="font-script text-8xl md:text-9xl text-white drop-shadow-lg">About Us</h1>
+    </div>
+  </section>
+
+
+  <!-- ==================== 2. PROMOTION SECTION ==================== -->
+  <section class="py-24 max-w-[1400px] mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <div>
+      <p class="text-xs font-bold text-[#DF6951] uppercase tracking-[0.2em] mb-4">PROMOTION</p>
+      <h2 class="font-volkhov text-4xl md:text-5xl font-bold text-[#181E4B] leading-[1.25] mb-6">
+        We Provide You Best<br>Europe Sightseeing Tours
+      </h2>
+      <p class="text-gray-500 text-base leading-relaxed mb-8 max-w-lg">
+        Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus illum aut optio quibusdam!
+      </p>
+      <a href="#" class="inline-block bg-[#DF6951] text-white px-8 py-3.5 rounded-xl text-sm font-medium hover:bg-[#c85740] transition-all shadow-md hover:shadow-lg">
+        View Packages
+      </a>
+    </div>
+
+    <!-- Khung ảnh tròn -->
+    <div class="relative flex justify-center items-center">
+      <div class="w-[420px] h-[420px] lg:w-[480px] lg:h-[480px] rounded-full overflow-hidden border-[10px] border-white shadow-2xl relative z-10">
+        <img src="assets/img/Ellipse 626.png" alt="Europe Sightseeing" class="w-full h-full object-cover">
+      </div>
+      <!-- Background nét đứt quấn quanh -->
+      <div class="absolute w-[460px] h-[460px] lg:w-[520px] lg:h-[520px] rounded-full border-2 border-dashed border-[#DF6951]/40 animate-spin-slow"></div>
+    </div>
+  </section>
+
+
+  <!-- ==================== 3. BANNER VIDEO WANDERLUST ==================== -->
+  <section class="relative bg-cover bg-center h-[450px] flex items-center justify-center text-white" style="background-image: url('assets/img/Rectangle 19353.png');">
+    <div class="absolute inset-0 bg-black/25"></div>
+    
+    <div class="relative z-10 text-center flex flex-col items-center">
+      <h2 class="font-script text-8xl md:text-9xl mb-6 text-white drop-shadow-xl">Wanderlust</h2>
+      <a href="#" class="w-20 h-20 bg-[#DF6951] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+        <svg class="w-8 h-8 text-white translate-x-1" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ==================== 4. TREND & POPULAR TOUR PLANS ==================== -->
+  <section class="py-24 max-w-[1400px] mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <!-- Cụm ảnh Polaroid bên trái -->
+    <div class="relative flex justify-center">
+      <img src="assets/img/Rectangle 1999.png" alt="Polaroid Memory" class="w-[420px] lg:w-[480px] object-contain drop-shadow-2xl">
+    </div>
+
+    <!-- Nội dung & 3 Vòng tròn Tiến độ -->
+    <div class="relative">
+      <img src="assets/img/image 919.png" alt="Shell" class="absolute -top-16 right-4 w-24 h-24 object-contain hidden lg:block">
+
+      <p class="text-xs font-bold text-[#DF6951] uppercase tracking-[0.2em] mb-3">TREND</p>
+      <h2 class="font-volkhov text-4xl md:text-5xl font-bold text-[#181E4B] mb-6">Our Popular Tour Plans</h2>
+      <p class="text-gray-500 text-base leading-relaxed mb-12 max-w-xl">
+        Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium.
+      </p>
+
+      <!-- 3 Vòng tròn % thống kê -->
+      <div class="grid grid-cols-3 gap-6 text-center">
+        <div class="flex flex-col items-center">
+          <img src="assets/img/Group 1000001755.png" alt="78% Vacations" class="w-28 h-28 object-contain mb-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-[#181E4B]">VACATIONS</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="assets/img/Group 1000001756.png" alt="55% Honeymoon" class="w-28 h-28 object-contain mb-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-[#181E4B]">HONEYMOON</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="assets/img/Group 1000001757.png" alt="30% Musical Events" class="w-28 h-28 object-contain mb-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-[#181E4B]">MUSICAL EVENTS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- ==================== 5. GALLERY INTERNATIONAL PACKAGES ==================== -->
+  <section class="py-20 max-w-[1400px] mx-auto px-8">
+    <div class="text-center mb-16">
+      <p class="text-xs font-bold text-[#DF6951] uppercase tracking-[0.2em] mb-3">EXPLORE MORE</p>
+      <h2 class="font-volkhov text-4xl md:text-5xl font-bold text-[#181E4B]">Our International Packages</h2>
+    </div>
+
+    <!-- Lưới 4 Cột - Chuẩn Vị Trí Ảnh 100% -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- Cột 1: Balo cam -> Cánh máy bay -> Áo xanh leo núi -->
+      <div class="flex flex-col gap-8">
+        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+          <img src="assets/img/Rectangle 19355.png" alt="Barcelona" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
+            <span>Barcelona</span>
+            <span>$840</span>
+          </div>
+        </div>
+        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+          <img src="assets/img/Rectangle 19359.png" alt="Tommorow land" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
+            <span>Tommorow land</span>
+            <span>$840</span>
+          </div>
+        </div>
+        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+          <img src="assets/img/Rectangle 19358.png" alt="Barcelona" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
+            <span>Barcelona</span>
+            <span>$840</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cột 2: Balo đỏ tuyết -> Trái tim hoàng hôn -> Cô gái tóc vàng -->
+      <div class="flex flex-col gap-8">
+        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+          <img src="assets/img/Rectangle 19356.png" alt="Switzerland" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
+            <span>Switzerland</span>
+            <span>$840</span>
+          </div>
+        </div>
+        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+          <img src="assets/img/Rectangle 19360.png" alt="Los Angelas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
+            <span>Los Angelas</span>
+            <span>$840</span>
+          </div>
+        </div>
+        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+          <img src="assets/img/Rectangle 19363.png" alt="Maldives" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
+            <span>Maldives</span>
+            <span>$840</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cột 3: Cô gái Rio cao 2 ô -> Thung lũng cỏ xanh (Barcelona) -->
+      <div class="flex flex-col gap-8">
+        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[512px]">
+          <img src="assets/img/Rectangle 19357.png" alt="Rio de Jenero" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
+            <span>Rio de Jenero</span>
+            <span>$840</span>
+          </div>
+        </div>
+        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+          <img src="assets/img/Rectangle 19362.png" alt="Barcelona" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
+            <span>Barcelona</span>
+            <span>$840</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cột 4: Hồ núi tuyết (Barcelona) -> Cánh đồng hoa (India) -> Núi soi bóng nước  -->
+      <div class="flex flex-col gap-8">
+        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+          <img src="assets/img/Rectangle 19301.png" alt="Barcelona" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
+            <span>Barcelona</span>
+            <span>$840</span>
+          </div>
+        </div>
+        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+          <img src="assets/img/Rectangle 19361.png" alt="India" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
+            <span>India</span>
+            <span>$840</span>
+          </div>
+        </div>
+        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+          <img src="assets/img/Rectangle 19365.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
+            <span>Barcelona</span>
+            <span>$840</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== 6. TESTIMONIAL / CLIENT REVIEWS ==================== -->
+  <section class="py-24 bg-[#F9FAFB] relative overflow-hidden">
+    <div class="max-w-[1400px] mx-auto px-8 relative">
+      <!-- Ảnh trang trí nằm gọn trong container -->
+      <img src="assets/img/image 919.png" alt="Shell" class="absolute top-0 left-8 w-28 object-contain hidden md:block">
+      <img src="assets/img/honeymoon-special.png" alt="Memory photo" class="absolute top-0 right-8 w-56 object-contain hidden md:block">
+
+      <div class="max-w-3xl mx-auto text-center relative z-10 pt-6">
+        <p class="text-xs font-bold text-[#DF6951] uppercase tracking-[0.2em] mb-3">PROMOTION</p>
+        <h2 class="font-volkhov text-4xl md:text-5xl font-bold text-[#181E4B] mb-16">See What Our Clients Say About Us</h2>
+
+        <!-- Card Review -->
+        <div class="bg-white rounded-3xl p-10 md:p-14 shadow-xl relative">
+          <div class="w-24 h-24 rounded-full overflow-hidden mx-auto -mt-20 border-4 border-white shadow-md mb-6">
+            <img src="assets/img/Ellipse 624.png" alt="Christine Beckam" class="w-full h-full object-cover">
+          </div>
+
+          <p class="text-gray-500 italic text-base leading-relaxed mb-8">
+            “Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis.”
+          </p>
+
+          <h4 class="font-bold text-base text-[#181E4B]">Christine Beckam - Designer</h4>
+
+          <!-- Nút chuyển slide -->
+          <button class="absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-gray-100 hover:bg-[#DF6951] hover:text-white rounded-full flex items-center justify-center transition-all text-lg shadow-sm">
+            ←
+          </button>
+          <button class="absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-gray-100 hover:bg-[#DF6951] hover:text-white rounded-full flex items-center justify-center transition-all text-lg shadow-sm">
+            →
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== 7. FOOTER FULL ==================== -->
+  <footer class="bg-white pt-20 pb-12 border-t border-gray-100">
+    <div class="max-w-[1400px] mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div>
+        <a href="index.html" class="text-3xl font-bold text-[#181E4B] mb-4 inline-block">
+          Travel<span class="text-[#DF6951]">.</span>
+        </a>
+        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+          Travel helps companies manage payments easily.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#"><img src="assets/img/052-linkedin.png" alt="LinkedIn" class="w-6 h-6"></a>
+          <a href="#"><img src="assets/img/025-messenger.png" alt="Messenger" class="w-6 h-6"></a>
+          <a href="#"><img src="assets/img/096-twitter.png" alt="Twitter" class="w-6 h-6"></a>
+          <a href="#"><img src="assets/img/097-twoo.png" alt="Meta" class="w-6 h-6"></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-base text-[#181E4B] mb-5">Company</h4>
+        <ul class="space-y-3 text-sm text-gray-500">
+          <li><a href="about.html" class="hover:text-[#DF6951] transition-colors">About Us</a></li>
+          <li><a href="#" class="hover:text-[#DF6951] transition-colors">Careers</a></li>
+          <li><a href="#" class="hover:text-[#DF6951] transition-colors">Blog</a></li>
+          <li><a href="#" class="hover:text-[#DF6951] transition-colors">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-base text-[#181E4B] mb-5">Destinations</h4>
+        <ul class="space-y-3 text-sm text-gray-500">
+          <li><a href="#" class="hover:text-[#DF6951] transition-colors">Maldives</a></li>
+          <li><a href="#" class="hover:text-[#DF6951] transition-colors">Los Angelas</a></li>
+          <li><a href="#" class="hover:text-[#DF6951] transition-colors">Las Vegas</a></li>
+          <li><a href="#" class="hover:text-[#DF6951] transition-colors">Torronto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-base text-[#181E4B] mb-5">Join Our Newsletter</h4>
+        <div class="flex gap-2 mb-3">
+          <input type="email" placeholder="Your email address" class="bg-indigo-50/50 px-4 py-3 rounded-xl text-sm w-full focus:outline-none border border-transparent focus:border-[#DF6951]">
+          <button class="bg-[#DF6951] text-white px-6 py-3 rounded-xl text-sm font-medium hover:bg-[#c85740] transition-colors whitespace-nowrap">
+            Subscribe
+          </button>
+        </div>
+        <p class="text-xs text-gray-400">* Will send you weekly updates for your better tour packages.</p>
+      </div>
+    </div>
+
+    <div class="text-center text-sm text-gray-400 border-t border-gray-100 pt-8">
+      Copyright @ Travel 2026. All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

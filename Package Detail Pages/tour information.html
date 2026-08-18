@@ -60,26 +60,28 @@
 
   <!-- 2. MAIN CONTENT AREA -->
   <main class="max-w-5xl mx-auto px-4 -mt-20 relative z-20 pb-20">
-    <div class="bg-white shadow-xl overflow-hidden p-6 md:p-10">
-      
-      <!-- TABS (Chỉ để chữ, sẵn sàng chèn img icon) -->
-      <div class="flex flex-wrap items-center justify-around border-b border-gray-100 pb-6 mb-8 text-sm font-semibold text-gray-500 gap-4">
-        <button class="text-[#181E4B] border-b-2 border-[#DF6951] pb-2 flex items-center gap-2">
-          Information
-        </button>
-        <button class="hover:text-[#181E4B] flex items-center gap-2">
-          Tour Plan
-        </button>
-        <button class="hover:text-[#181E4B] flex items-center gap-2">
-          Location
-        </button>
-        <button class="hover:text-[#181E4B] flex items-center gap-2">
-          Gallery
-        </button>
-      </div>
+    <div class="bg-white shadow-xl overflow-hidden">
+ <!-- TABS SECTION -->
+<div class="grid grid-cols-2 md:grid-cols-4 bg-[#F8F8F8]">
+  <!-- Tab Active: Information (Nền trắng, chữ đậm) -->
+  <button class="bg-white py-5 px-6 font-bold text-[#181E4B] flex items-center justify-center gap-2 shadow-sm">
+    <!-- Sau này chèn icon <i> vào đây -->
+    <span>Information</span>
+  </button>
+  <!-- các Tab chưa active (Nền xám nhạt, chữ mờ) -->
+  <button class="py-5 px-6 font-medium text-gray-500 hover:text-[#181E4B] hover:bg-gray-200/50 transition flex items-center justify-center gap-2">
+    <span>Tour Plan</span>
+  </button>
+  <button class="py-5 px-6 font-medium text-gray-500 hover:text-[#181E4B] hover:bg-gray-200/50 transition flex items-center justify-center gap-2">
+    <span>Location</span>
+  </button>
+  <button class="py-5 px-6 font-medium text-gray-500 hover:text-[#181E4B] hover:bg-gray-200/50 transition flex items-center justify-center gap-2">
+    <span>Gallery</span>
+  </button>
+</div>
 
       <!-- GRID LAYOUT -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 md:p-10"">
         
         <!-- CỘT TRÁI: THÔNG TIN TOUR -->
         <div class="lg:col-span-7 space-y-6">
@@ -152,7 +154,7 @@
         </div>
 
         <!-- CỘT PHẢI: FORM "BOOK THIS TOUR" -->
-        <div class="lg:col-span-5 bg-[#F4F4F5] p-6 rounded-2xl">
+        <div class="lg:col-span-5 bg-[#F4F4F5] p-6">
           <h3 class="font-volkhov font-bold text-2xl text-center mb-2">Book This Tour</h3>
           <p class="text-[11px] text-gray-500 text-center mb-6 leading-tight">
             Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt?
@@ -181,10 +183,10 @@
       </div>
 
       <!-- 3. SECTION "FROM OUR GALLERY" -->
-      <div class="mt-16 pt-10 border-t border-gray-100">
+      <div class="mt-16 pt-10 border-t border-gray-100 p-6 md:p-10">
         <h2 class="font-volkhov font-bold text-3xl mb-2">From our gallery</h2>
         <p class="text-xs text-gray-500 max-w-lg mb-8 leading-relaxed">
-        Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt? Quo quidem neque iste expedita est dolor similique ut quasi maxime ut deserunt autem At praesentium voluptatem aut libero nisi. 
+        Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt? Quo quidem neque iste expedita est dolor similique ut quasi maxime ut deserunt autem At praesentium voluptatem aut libero nisi.
         </p>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">

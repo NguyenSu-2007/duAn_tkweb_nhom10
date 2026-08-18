@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Detail - Switzerland</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Volkhov & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Volkhov:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+            volkhov: ['Volkhov', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-poppins bg-[#F8F9FB] text-[#181E4B]">
+
+  <!-- 1. HERO SECTION -->
+  <div class="relative w-full h-[500px] bg-cover bg-center" style="background-image: url('/assets/img/1.jpg');">
+    <div class="absolute inset-0 bg-black/30"></div>
+
+    <!-- Header Navigation -->
+    <header class="relative z-10 max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="/index.html" class="relative inline-block text-white">
+        <h1 class="font-volkhov font-bold text-3xl">Travel</h1>
+        <img src="/assets/img/Arrow 05.png" alt="underline" class="w-16 mt-0.5">
+      </a>
+
+      <!-- Menu -->
+      <nav class="hidden md:flex items-center space-x-8 text-white font-medium text-sm">
+        <a href="/index.html" class="hover:text-[#DF6951] transition">Home</a>
+        <a href="/about.html" class="hover:text-[#DF6951] transition">About</a>
+        <a href="#" class="hover:text-[#DF6951] transition">Services</a>
+        <a href="/tours.html" class="hover:text-[#DF6951] transition">Upcoming Packages</a>
+      </nav>
+
+      <button class="bg-[#DF6951] hover:bg-[#c85741] text-white px-6 py-2.5 rounded-lg font-medium text-sm transition">
+        Get in Touch
+      </button>
+    </header>
+
+    <!-- Title banner -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-[340px] text-white text-center">
+      <span class="uppercase tracking-[0.2em] text-xs font-semibold mb-1 opacity-90">EXPLORE</span>
+      <h2 class="font-volkhov italic text-6xl md:text-7xl">Landscapes</h2>
+    </div>
+  </div>
+
+  <!-- 2. MAIN CONTENT AREA -->
+  <main class="max-w-5xl mx-auto px-4 -mt-20 relative z-20 pb-20">
+    <div class="bg-white shadow-xl overflow-hidden p-6 md:p-10">
+      
+      <!-- TABS (Chỉ để chữ, sẵn sàng chèn img icon) -->
+      <div class="flex flex-wrap items-center justify-around border-b border-gray-100 pb-6 mb-8 text-sm font-semibold text-gray-500 gap-4">
+        <button class="text-[#181E4B] border-b-2 border-[#DF6951] pb-2 flex items-center gap-2">
+          Information
+        </button>
+        <button class="hover:text-[#181E4B] flex items-center gap-2">
+          Tour Plan
+        </button>
+        <button class="hover:text-[#181E4B] flex items-center gap-2">
+          Location
+        </button>
+        <button class="hover:text-[#181E4B] flex items-center gap-2">
+          Gallery
+        </button>
+      </div>
+
+      <!-- GRID LAYOUT -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- CỘT TRÁI: THÔNG TIN TOUR -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="flex items-baseline justify-between flex-wrap gap-2">
+            <h1 class="font-volkhov font-bold text-3xl text-[#181E4B]">Switzerland</h1>
+            <div>
+              <span class="text-2xl font-bold text-[#DF6951]">1,000 $</span>
+              <span class="text-xs text-gray-400">/ Per Couple</span>
+            </div>
+          </div>
+
+          <!-- Đánh giá (Thay thế bằng ảnh star khi bạn có) -->
+          <div class="flex items-center gap-1 text-xs text-gray-400">
+            <span class="text-yellow-500 font-bold">5.0</span>
+            <span>(2.3k review)</span>
+          </div>
+
+          <!-- Mô tả ngắn -->
+          <p class="text-xs text-gray-500 leading-relaxed">
+          Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt? Quo quidem neque iste expedita est dolor similique ut quasi maxime ut 
+          deserunt autem At praesentium voluptatem aut libero nisi. Et eligendi sint ab cumque veritatis aut provident aliquam. Aut aspernatur consequuntur eum quaerat 
+          distinctio ut inventore aliquid et quasi alias ut rerum suscipit et nihil deleniti. Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut 
+          magni nesciunt? Quo quidem neque iste expedita est dolor similique ut quasi maxime ut deserunt autem At praesentium voluptatem aut libero nisi. Et eligendi 
+          sint ab cumque veritatis aut provident aliquam. Aut aspernatur consequuntur eum quaerat distinctio ut inventore aliquid et quasi alias ut rerum suscipit et nihil deleniti.
+          </p>
+
+          <!-- Chi tiết thông số -->
+          <div class="space-y-3 pt-2 text-xs">
+            <div class="grid grid-cols-12">
+              <span class="col-span-4 font-bold text-[#DF6951]">Destination</span>
+              <span class="col-span-8 text-gray-600">: Zurich, Switzerland</span>
+            </div>
+            <div class="grid grid-cols-12">
+              <span class="col-span-4 font-bold text-[#DF6951]">Departure</span>
+              <span class="col-span-8 text-gray-600">: Main Square, New City</span>
+            </div>
+            <div class="grid grid-cols-12">
+              <span class="col-span-4 font-bold text-[#DF6951]">Departure Time</span>
+              <span class="col-span-8 text-gray-600">: Approximately 08 : 10 AM</span>
+            </div>
+            <div class="grid grid-cols-12">
+              <span class="col-span-4 font-bold text-[#DF6951]">Return Time</span>
+              <span class="col-span-8 text-gray-600">: Approximately 07 : 20 PM</span>
+            </div>
+            <div class="grid grid-cols-12">
+              <span class="col-span-4 font-bold text-[#DF6951]">Dress Code</span>
+              <span class="col-span-8 text-gray-600">: Casual, comfortable and light</span>
+            </div>
+
+            <!-- Not Included -->
+            <div class="grid grid-cols-12 pt-2">
+              <span class="col-span-4 font-bold text-[#DF6951]">Not Included</span>
+              <div class="col-span-8 grid grid-cols-2 gap-2 text-gray-600">
+                <span>Gallery Ticket</span>
+                <span>Lunch</span>
+              </div>
+            </div>
+
+            <!-- Included -->
+            <div class="grid grid-cols-12 pt-2">
+              <span class="col-span-4 font-bold text-[#DF6951]">Included</span>
+              <div class="col-span-8 grid grid-cols-2 gap-2 text-gray-600">
+                <span>5 star Accommodations</span>
+                <span>Airport Transfer</span>
+                <span>Breakfast</span>
+                <span>Personal Guide</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CỘT PHẢI: FORM "BOOK THIS TOUR" -->
+        <div class="lg:col-span-5 bg-[#F4F4F5] p-6 rounded-2xl">
+          <h3 class="font-volkhov font-bold text-2xl text-center mb-2">Book This Tour</h3>
+          <p class="text-[11px] text-gray-500 text-center mb-6 leading-tight">
+            Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt?
+          </p>
+
+          <form class="space-y-3">
+            <input type="text" placeholder="Name" class="w-full bg-white px-4 py-2.5 rounded-lg text-xs border border-transparent focus:border-[#DF6951] focus:outline-none">
+            <input type="email" placeholder="Email" class="w-full bg-white px-4 py-2.5 rounded-lg text-xs border border-transparent focus:border-[#DF6951] focus:outline-none">
+            <input type="email" placeholder="Confirm Email" class="w-full bg-white px-4 py-2.5 rounded-lg text-xs border border-transparent focus:border-[#DF6951] focus:outline-none">
+            <input type="tel" placeholder="Phone" class="w-full bg-white px-4 py-2.5 rounded-lg text-xs border border-transparent focus:border-[#DF6951] focus:outline-none">
+            <input type="text" placeholder="dd-mm-yy" class="w-full bg-white px-4 py-2.5 rounded-lg text-xs border border-transparent focus:border-[#DF6951] focus:outline-none">
+            <input type="number" placeholder="Number of ticket" class="w-full bg-white px-4 py-2.5 rounded-lg text-xs border border-transparent focus:border-[#DF6951] focus:outline-none">
+            <textarea placeholder="Message" rows="3" class="w-full bg-white px-4 py-2.5 rounded-lg text-xs border border-transparent focus:border-[#DF6951] focus:outline-none"></textarea>
+
+            <div class="space-y-2 pt-2">
+              <button type="button" class="w-full bg-[#DF6951] text-white py-2.5 rounded-lg font-medium text-xs hover:bg-[#c85741] transition">
+                Check Availability
+              </button>
+              <button type="submit" class="w-full bg-[#DF6951] text-white py-2.5 rounded-lg font-medium text-xs hover:bg-[#c85741] transition">
+                Book Now
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- 3. SECTION "FROM OUR GALLERY" -->
+      <div class="mt-16 pt-10 border-t border-gray-100">
+        <h2 class="font-volkhov font-bold text-3xl mb-2">From our gallery</h2>
+        <p class="text-xs text-gray-500 max-w-lg mb-8 leading-relaxed">
+        Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt? Quo quidem neque iste expedita est dolor similique ut quasi maxime ut deserunt autem At praesentium voluptatem aut libero nisi. 
+        </p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Lưới 6 hình ảnh -->
+          <div class="lg:col-span-7 grid grid-cols-3 gap-3">
+            <img src="/assets/img/2.png" alt="Gallery 2" class="w-full h-32 object-cover  shadow-sm hover:scale-105 transition">
+            <img src="/assets/img/3.png" alt="Gallery 3" class="w-full h-32 object-cover  shadow-sm hover:scale-105 transition">
+            <img src="/assets/img/4.png" alt="Gallery 4" class="w-full h-32 object-cover  shadow-sm hover:scale-105 transition">
+            <img src="/assets/img/5.png" alt="Gallery 5" class="w-full h-32 object-cover  shadow-sm hover:scale-105 transition">
+            <img src="/assets/img/6.png" alt="Gallery 6" class="w-full h-32 object-cover  shadow-sm hover:scale-105 transition">
+            <img src="/assets/img/7.png" alt="Gallery 7" class="w-full h-32 object-cover  shadow-sm hover:scale-105 transition">
+          </div>
+
+          <!-- Ảnh đồ họa -->
+          <div class="lg:col-span-5 flex justify-center">
+            <img src="/assets/img/273 1.png" alt="Travel Concept" class="max-w-[320px] w-full object-contain">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 4. FOOTER -->
+  <footer class="bg-white border-t border-gray-100 pt-12 pb-6 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      
+      <!-- Cột 1: Logo -->
+      <div class="space-y-3">
+        <a href="/index.html" class="inline-block">
+          <h2 class="font-volkhov font-bold text-2xl text-[#181E4B]">Travel</h2>
+          <img src="/assets/img/Arrow 05.png" alt="underline" class="w-14">
+        </a>
+        <p class="text-xs text-gray-400">Travel helps companies manage payments easily.</p>
+      </div>
+
+      <!-- Cột 2: Company -->
+      <div>
+        <h4 class="font-bold text-sm mb-3">Company</h4>
+        <ul class="space-y-2 text-xs text-gray-500">
+          <li><a href="/about.html" class="hover:text-[#DF6951]">About Us</a></li>
+          <li><a href="#" class="hover:text-[#DF6951]">Careers</a></li>
+          <li><a href="#" class="hover:text-[#DF6951]">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Cột 3: Destinations -->
+      <div>
+        <h4 class="font-bold text-sm mb-3">Destinations</h4>
+        <ul class="space-y-2 text-xs text-gray-500">
+          <li><a href="#" class="hover:text-[#DF6951]">Maldives</a></li>
+          <li><a href="#" class="hover:text-[#DF6951]">Los Angeles</a></li>
+          <li><a href="#" class="hover:text-[#DF6951]">Las Vegas</a></li>
+        </ul>
+      </div>
+
+      <!-- Cột 4: Newsletter -->
+      <div>
+        <h4 class="font-bold text-sm mb-3">Join Our Newsletter</h4>
+        <div class="flex gap-2 mb-2">
+          <input type="email" placeholder="Your email address" class="bg-indigo-50/50 text-xs px-3 py-2 rounded-lg w-full focus:outline-none">
+          <button class="bg-[#DF6951] text-white px-4 py-2 rounded-lg text-xs hover:bg-[#c85741] transition">Subscribe</button>
+        </div>
+        <p class="text-[10px] text-gray-400">* Will send you weekly updates for your better tour packages.</p>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-xs text-gray-400 pt-6 border-t border-gray-100">
+      Copyright @ Xpro 2022. All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

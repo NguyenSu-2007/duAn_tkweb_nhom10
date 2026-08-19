@@ -4,18 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - Travel</title>
+
+  <!-- Google Fonts: Yesteryear, Poppins, Volkhov -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Volkhov:ital,wght@0,400;0,700;1,400&family=Yesteryear&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Cấu hình Font cho Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+            volkhov: ['Volkhov', 'serif'],
+            script: ['Yesteryear', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body class="bg-white text-[#181E4B] overflow-x-hidden">
 
   <!-- ==================== 1. HERO BANNER ==================== -->
-  <section class="relative bg-cover bg-center h-[580px] flex flex-col justify-between" style="background-image: url('assets/img/Rectangle 19290.png');">
+  <section class="relative bg-cover bg-center h-[580px] flex flex-col justify-between" style="background-image: url('assets/img/nenabout.jpg');">
     <div class="absolute inset-0 bg-black/15"></div>
 
     <!-- Header Navigation -->
     <header class="relative z-10 max-w-[1400px] mx-auto w-full px-8 py-8 flex justify-between items-center text-white">
-      <a href="index.html" class="text-3xl font-bold tracking-wide">
-        Travel<span class="text-[#DF6951]">.</span>
+      <a href="index.html" class="font-volkhov relative text-3xl font-bold tracking-wide">
+        Travel
+        <img src="assets/img/Arrow 05.png" alt="" class="w-20 absolute -bottom-4 -right-6">
       </a>
       
       <nav class="hidden md:flex space-x-12 font-medium text-base">
@@ -70,11 +93,6 @@
     
     <div class="relative z-10 text-center flex flex-col items-center">
       <h2 class="font-script text-8xl md:text-9xl mb-6 text-white drop-shadow-xl">Wanderlust</h2>
-      <a href="#" class="w-20 h-20 bg-[#DF6951] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
-        <svg class="w-8 h-8 text-white translate-x-1" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M8 5v14l11-7z"/>
-        </svg>
-      </a>
     </div>
   </section>
 
@@ -100,15 +118,12 @@
       <div class="grid grid-cols-3 gap-6 text-center">
         <div class="flex flex-col items-center">
           <img src="assets/img/Group 1000001755.png" alt="78% Vacations" class="w-28 h-28 object-contain mb-4">
-          <span class="text-xs font-bold uppercase tracking-wider text-[#181E4B]">VACATIONS</span>
         </div>
         <div class="flex flex-col items-center">
           <img src="assets/img/Group 1000001756.png" alt="55% Honeymoon" class="w-28 h-28 object-contain mb-4">
-          <span class="text-xs font-bold uppercase tracking-wider text-[#181E4B]">HONEYMOON</span>
         </div>
         <div class="flex flex-col items-center">
           <img src="assets/img/Group 1000001757.png" alt="30% Musical Events" class="w-28 h-28 object-contain mb-4">
-          <span class="text-xs font-bold uppercase tracking-wider text-[#181E4B]">MUSICAL EVENTS</span>
         </div>
       </div>
     </div>
@@ -127,21 +142,21 @@
       
       <!-- Cột 1: Balo cam -> Cánh máy bay -> Áo xanh leo núi -->
       <div class="flex flex-col gap-8">
-        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+        <div class="relative overflow-hidden group shadow-lg h-[240px]">
           <img src="assets/img/Rectangle 19355.png" alt="Barcelona" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
             <span>Barcelona</span>
             <span>$840</span>
           </div>
         </div>
-        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+        <div class="relative overflow-hidden group shadow-lg h-[240px]">
           <img src="assets/img/Rectangle 19359.png" alt="Tommorow land" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
             <span>Tommorow land</span>
             <span>$840</span>
           </div>
         </div>
-        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+        <div class="relative overflow-hidden group shadow-lg h-[240px]">
           <img src="assets/img/Rectangle 19358.png" alt="Barcelona" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
             <span>Barcelona</span>
@@ -152,21 +167,21 @@
 
       <!-- Cột 2: Balo đỏ tuyết -> Trái tim hoàng hôn -> Cô gái tóc vàng -->
       <div class="flex flex-col gap-8">
-        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+        <div class="relative overflow-hidden group shadow-lg h-[240px]">
           <img src="assets/img/Rectangle 19356.png" alt="Switzerland" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
             <span>Switzerland</span>
             <span>$840</span>
           </div>
         </div>
-        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+        <div class="relative overflow-hidden group shadow-lg h-[240px]">
           <img src="assets/img/Rectangle 19360.png" alt="Los Angelas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
             <span>Los Angelas</span>
             <span>$840</span>
           </div>
         </div>
-        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+        <div class="relative overflow-hidden group shadow-lg h-[240px]">
           <img src="assets/img/Rectangle 19363.png" alt="Maldives" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
             <span>Maldives</span>
@@ -177,14 +192,14 @@
 
       <!-- Cột 3: Cô gái Rio cao 2 ô -> Thung lũng cỏ xanh (Barcelona) -->
       <div class="flex flex-col gap-8">
-        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[512px]">
+        <div class="relative overflow-hidden group shadow-lg h-[512px]">
           <img src="assets/img/Rectangle 19357.png" alt="Rio de Jenero" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
             <span>Rio de Jenero</span>
             <span>$840</span>
           </div>
         </div>
-        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+        <div class="relative overflow-hidden group shadow-lg h-[240px]">
           <img src="assets/img/Rectangle 19362.png" alt="Barcelona" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
             <span>Barcelona</span>
@@ -195,21 +210,21 @@
 
       <!-- Cột 4: Hồ núi tuyết (Barcelona) -> Cánh đồng hoa (India) -> Núi soi bóng nước  -->
       <div class="flex flex-col gap-8">
-        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+        <div class="relative overflow-hidden group shadow-lg h-[240px]">
           <img src="assets/img/Rectangle 19301.png" alt="Barcelona" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
             <span>Barcelona</span>
             <span>$840</span>
           </div>
         </div>
-        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+        <div class="relative overflow-hidden group shadow-lg h-[240px]">
           <img src="assets/img/Rectangle 19361.png" alt="India" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
             <span>India</span>
             <span>$840</span>
           </div>
         </div>
-        <div class="relative rounded-3xl overflow-hidden group shadow-lg h-[240px]">
+        <div class="relative overflow-hidden group shadow-lg h-[240px]">
           <img src="assets/img/Rectangle 19365.png" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/70 to-transparent flex justify-between text-white font-semibold text-base">
             <span>Barcelona</span>
@@ -227,7 +242,6 @@
     <div class="max-w-[1400px] mx-auto px-8 relative">
       <!-- Ảnh trang trí nằm gọn trong container -->
       <img src="assets/img/image 919.png" alt="Shell" class="absolute top-0 left-8 w-28 object-contain hidden md:block">
-      <img src="assets/img/honeymoon-special.png" alt="Memory photo" class="absolute top-0 right-8 w-56 object-contain hidden md:block">
 
       <div class="max-w-3xl mx-auto text-center relative z-10 pt-6">
         <p class="text-xs font-bold text-[#DF6951] uppercase tracking-[0.2em] mb-3">PROMOTION</p>
@@ -244,14 +258,6 @@
           </p>
 
           <h4 class="font-bold text-base text-[#181E4B]">Christine Beckam - Designer</h4>
-
-          <!-- Nút chuyển slide -->
-          <button class="absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-gray-100 hover:bg-[#DF6951] hover:text-white rounded-full flex items-center justify-center transition-all text-lg shadow-sm">
-            ←
-          </button>
-          <button class="absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 bg-gray-100 hover:bg-[#DF6951] hover:text-white rounded-full flex items-center justify-center transition-all text-lg shadow-sm">
-            →
-          </button>
         </div>
       </div>
     </div>
@@ -262,8 +268,9 @@
   <footer class="bg-white pt-20 pb-12 border-t border-gray-100">
     <div class="max-w-[1400px] mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
       <div>
-        <a href="index.html" class="text-3xl font-bold text-[#181E4B] mb-4 inline-block">
-          Travel<span class="text-[#DF6951]">.</span>
+        <a href="index.html" class="relative text-3xl font-bold text-[#181E4B] mb-4 inline-block">
+          Travel
+          <img src="assets/img/Arrow 05.png" alt="" class="w-20 absolute -bottom-4 -right-6">
         </a>
         <p class="text-gray-400 text-sm mb-6 leading-relaxed">
           Travel helps companies manage payments easily.

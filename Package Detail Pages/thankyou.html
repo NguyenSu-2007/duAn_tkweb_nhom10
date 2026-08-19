@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - Travel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Volkhov & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Volkhov:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+            volkhov: ['Volkhov', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-poppins bg-[#FFF6F3] min-h-screen flex flex-col justify-between overflow-x-hidden">
+
+  <!-- TOP SECTION: THANK YOU MESSAGE (Mở rộng tràn màn hình) -->
+  <div class="flex-1 flex flex-col items-center justify-center text-center px-6 py-20 space-y-6">
+    
+    <!-- Chữ Thank You lớn hơn -->
+    <h1 class="font-volkhov italic text-7xl md:text-8xl lg:text-9xl text-[#DF6951] tracking-tight">
+      Thank You
+    </h1>
+
+    <!-- Dòng text kèm likehand.png -->
+    <p class="text-gray-700 font-medium text-xl md:text-2xl lg:text-3xl flex items-center justify-center gap-3 pt-4">
+      <span>If you liked this project, then give it a</span>
+      <img src="/assets/img/likehand.png" alt="Like" class="w-8 h-8 md:w-10 md:h-10 inline-block object-contain">
+    </p>
+
+    <!-- Dòng nhỏ bên dưới -->
+    <p class="text-gray-500 font-normal text-base md:text-xl lg:text-2xl">
+      Don't forget to share your reviews in comment section.
+    </p>
+
+  </div>
+
+  <!-- BOTTOM BANNER SECTION (Full Width sát chân màn hình) -->
+  <div class="w-full bg-[#4A4A4A] py-10 px-8 md:px-16 lg:px-24 flex flex-col md:flex-row items-center justify-between gap-8 text-white shadow-2xl">
+    
+    <!-- Text bên trái -->
+    <div class="text-center md:text-left font-semibold text-xl md:text-2xl lg:text-3xl leading-snug max-w-xl">
+      Get More Premium & High Quality Designs For
+    </div>
+
+    <!-- Khung FREE (Viền xanh mint, xoay nhẹ) -->
+    <div class="relative border-3 border-dashed border-[#5CD2C6] px-8 py-3 rounded-lg -rotate-3 transition hover:rotate-0">
+      <!-- Các điểm chấm nhỏ 4 góc trang trí -->
+      <span class="absolute -top-2 -left-2 w-4 h-4 bg-[#5CD2C6] rounded-sm"></span>
+      <span class="absolute -top-2 -right-2 w-4 h-4 bg-[#5CD2C6] rounded-sm"></span>
+      <span class="absolute -bottom-2 -left-2 w-4 h-4 bg-[#5CD2C6] rounded-sm"></span>
+      <span class="absolute -bottom-2 -right-2 w-4 h-4 bg-[#5CD2C6] rounded-sm"></span>
+
+      <span class="font-extrabold text-3xl md:text-4xl lg:text-5xl tracking-widest text-white uppercase">
+        FREE
+      </span>
+    </div>
+
+    <!-- Nút/Link Get'em bên phải kèm hand.png 2 bên -->
+    <div class="flex items-center gap-4">
+      <!-- Bàn tay chỉ sang phải -->
+      <img src="/assets/img/hand.png" alt="Hand point" class="w-8 h-8 md:w-10 md:h-10 object-contain -rotate-45">
+
+      <a href="#" class="font-bold text-lg md:text-xl lg:text-2xl underline underline-offset-8 hover:text-[#DF6951] transition text-center leading-tight">
+        Get'em From<br>Our Community
+      </a>
+
+      <!-- Bàn tay chỉ sang trái -->
+      <img src="/assets/img/hand.png" alt="Hand point" class="w-8 h-8 md:w-10 md:h-10 object-contain rotate-45 scale-x-[-1]">
+    </div>
+
+  </div>
+
+</body>
+</html>

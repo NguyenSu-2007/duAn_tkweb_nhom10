@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tour Plan - Switzerland</title>
+  <title>Tour Location - Switzerland</title>
   <script src="https://cdn.tailwindcss.com"></script>
   
   <!-- Google Fonts: Volkhov & Poppins -->
@@ -57,20 +57,20 @@
 
   <!-- 2. MAIN CONTENT AREA -->
   <main class="max-w-5xl mx-auto px-4 -mt-20 relative z-20 pb-20">
-    <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+    <div class="bg-white rounded-3xl shadow-xl overflow-hidden relative">
       
-      <!-- THANH TABS (Tab Tour Plan Active) -->
+      <!-- THANH TABS (Tab Location Active) -->
       <div class="grid grid-cols-2 md:grid-cols-4 bg-[#F8F9FA] border-b border-gray-100">
         <a href="/tour-detail.html" class="py-6 px-6 font-medium text-gray-500 hover:text-[#181E4B] hover:bg-gray-200/50 transition flex items-center justify-center gap-2">
           <span>Information</span>
         </a>
 
+        <a href="/tour-plan.html" class="py-6 px-6 font-medium text-gray-500 hover:text-[#181E4B] hover:bg-gray-200/50 transition flex items-center justify-center gap-2">
+          <span>Tour Plan</span>
+        </a>
+
         <!-- Active Tab -->
         <button class="bg-white py-6 px-6 font-bold text-[#181E4B] flex items-center justify-center gap-2 shadow-sm">
-          <span>Tour Plan</span>
-        </button>
-
-        <button class="py-6 px-6 font-medium text-gray-500 hover:text-[#181E4B] hover:bg-gray-200/50 transition flex items-center justify-center gap-2">
           <span>Location</span>
         </button>
 
@@ -80,105 +80,30 @@
       </div>
 
       <!-- NỘI DUNG CHÍNH (PADDINGS) -->
-      <div class="p-6 md:p-10">
+      <div class="p-6 md:p-10 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
           
-          <!-- CỘT TRÁI: TIMELINE TOUR PLAN (7 Cột) -->
+          <!-- CỘT TRÁI: THÔNG TIN VÀ BẢN ĐỒ (7 Cột) -->
           <div class="lg:col-span-7 space-y-6">
-            <h2 class="font-volkhov font-bold text-3xl text-[#181E4B] mb-6">Tour Plan</h2>
+            <h2 class="font-volkhov font-bold text-3xl text-[#181E4B]">Tour Location</h2>
 
-            <!-- TIMELINE CONTAINER -->
-            <div class="relative space-y-8">
-              <!-- Đường đứt nét cam dọc nối các ngày -->
-              <div class="absolute top-3 left-[17px] bottom-3 w-[2px] border-l-2 border-dashed border-[#DF6951]/60 -z-0"></div>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et Voluptates Officia Sed Molestiae Sint Et Voluptas Quos. Qui Harum Repudiandae Galisum Dolorem Hic Deleniti Officiis Est Sapiente Explicabo Non Eaque Corporis Aut Voluptatum Iusto At Facere Enim Id Voluptas Reprehenderit. Ut Voluptas Laudantium
+            </p>
 
-              <!-- DAY 1 -->
-              <div class="relative flex items-start gap-5 z-10">
-                <div class="w-9 h-9 bg-[#DF6951] text-white font-bold text-xs rounded-lg flex items-center justify-center shrink-0 shadow-sm">
-                  01
-                </div>
-                <div class="space-y-2 pt-1">
-                  <h3 class="font-bold text-sm text-[#181E4B]">Day 1: Departure</h3>
-                  <p class="text-[11px] text-gray-500 leading-relaxed">
-                    Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et Voluptates Officia Sed Molestiae Sint Et Voluptas Quos. Qui Harum Repudiandae Galisum Dolorem
-                  </p>
-                  <ul class="text-[11px] text-gray-600 space-y-1 pt-1">
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> Breakfast</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> Breakfast</li>
-                  </ul>
-                </div>
-              </div>
+            <!-- ẢNH BẢN ĐỒ (map.png) -->
+            <div class="w-full rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+              <img src="/assets/img/map.png" alt="Tour Location Map" class="w-full object-cover">
+            </div>
 
-              <!-- DAY 2 -->
-              <div class="relative flex items-start gap-5 z-10">
-                <div class="w-9 h-9 bg-[#DF6951] text-white font-bold text-xs rounded-lg flex items-center justify-center shrink-0 shadow-sm">
-                  02
-                </div>
-                <div class="space-y-2 pt-1">
-                  <h3 class="font-bold text-sm text-[#181E4B]">Day 2: Visiting Zurich, Geneva And Zermatt</h3>
-                  <p class="text-[11px] text-gray-500 leading-relaxed">
-                    Donec Quam Felis, Ultricies Nec, Pellentesque Eu, Pretium Quis, Sem. Nulla Consequat Massa Quis Enim. Donec Pede Justo, Fringilla Vel, Aliquet Nec, Vulputate Eget, Arcu. In Enim Justo, Rhoncus Ut, Imperdiet.
-                  </p>
-                  <ul class="text-[11px] text-gray-600 space-y-1 pt-1">
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> Breakfast</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> Breakfast</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- DAY 3 -->
-              <div class="relative flex items-start gap-5 z-10">
-                <div class="w-9 h-9 bg-[#DF6951] text-white font-bold text-xs rounded-lg flex items-center justify-center shrink-0 shadow-sm">
-                  03
-                </div>
-                <div class="space-y-2 pt-1">
-                  <h3 class="font-bold text-sm text-[#181E4B]">Day 3: Rest</h3>
-                  <p class="text-[11px] text-gray-500 leading-relaxed">
-                    Donec Quam Felis, Ultricies Nec, Pellentesque Eu, Pretium Quis, Sem. Nulla Consequat Massa Quis Enim. Donec Pede Justo, Fringilla Vel, Aliquet Nec, Vulputate Eget, Arcu. In Enim Justo, Rhoncus Ut, Imperdiet.
-                  </p>
-                  <ul class="text-[11px] text-gray-600 space-y-1 pt-1">
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> Breakfast</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- DAY 4 -->
-              <div class="relative flex items-start gap-5 z-10">
-                <div class="w-9 h-9 bg-[#DF6951] text-white font-bold text-xs rounded-lg flex items-center justify-center shrink-0 shadow-sm">
-                  04
-                </div>
-                <div class="space-y-2 pt-1">
-                  <h3 class="font-bold text-sm text-[#181E4B]">Day 4: Historical Tour</h3>
-                  <p class="text-[11px] text-gray-500 leading-relaxed">
-                    Donec Quam Felis, Ultricies Nec, Pellentesque Eu, Pretium Quis, Sem. Nulla Consequat Massa Quis Enim. Donec Pede Justo, Fringilla Vel, Aliquet Nec, Vulputate Eget, Arcu. In Enim Justo, Rhoncus Ut, Imperdiet.
-                  </p>
-                  <ul class="text-[11px] text-gray-600 space-y-1 pt-1">
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> Breakfast</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> Breakfast</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- DAY 5 -->
-              <div class="relative flex items-start gap-5 z-10">
-                <div class="w-9 h-9 bg-[#DF6951] text-white font-bold text-xs rounded-lg flex items-center justify-center shrink-0 shadow-sm">
-                  05
-                </div>
-                <div class="space-y-2 pt-1">
-                  <h3 class="font-bold text-sm text-[#181E4B]">Day 5: Return</h3>
-                  <p class="text-[11px] text-gray-500 leading-relaxed">
-                    Donec Quam Felis, Ultricies Nec, Pellentesque Eu, Pretium Quis, Sem. Nulla Consequat Massa Quis Enim. Donec Pede Justo, Fringilla Vel, Aliquet Nec, Vulputate Eget, Arcu. In Enim Justo, Rhoncus Ut, Venenatis Vitae, Justo. Nullam Dictum Felis Eu Pede Mollis Pretium.
-                  </p>
-                </div>
-              </div>
-
+            <!-- Đoạn văn mô tả dưới bản đồ -->
+            <div class="space-y-4 pt-2">
+              <p class="text-xs text-gray-500 leading-relaxed">
+                Sit Quasi Soluta Non Temporibus Voluptas Non Necessitatibus Tempore Sit Deleniti Praesentium Aut Velit Nostrum Ut Itaque Atque Ad Expedita Veniam. Hic Deleniti Officiis Est Sapiente Explicabo Non Eaque Corporis Aut Voluptatum Iusto At Facere Enim Id Voluptas Reprehenderit. Ut Voluptas Laudantium Et Molestias Voluptatem Ex Doloremque Omnis Est Ipsum Nihil.
+              </p>
+              <p class="text-xs text-gray-500 leading-relaxed">
+                Quo Facere Eveniet 33 Sint Rerum Est Internos Impedit Sed Dignissimos Quia. Et Rerum Deleniti Et Voluptates Saepe Qui Labore Quisquam Non Accusantium Temporibus. Quo Velit Numquam Hic Excepturi Sequi Sed Dicta Doloribus! In Quos Possimus Quo Quibusdam Aliquid Est Culpa Porro Sed Molestiae Libero At Blanditiis Minima A Reiciendis Fugiat.
+              </p>
             </div>
           </div>
 
@@ -220,6 +145,11 @@
           </div>
 
         </div>
+      </div>
+
+      <!-- ẢNH LÁ CÂY TRANG TRÍ (10.png) - Đặt tuyệt đối ở góc dưới bên trái -->
+      <div class="absolute bottom-0 left-0 pointer-events-none z-0">
+        <img src="/assets/img/10.png" alt="Leaf Decor" class="w-44 md:w-56 object-contain">
       </div>
 
     </div>

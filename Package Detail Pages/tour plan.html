@@ -4,25 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tour Plan - Switzerland</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Google Fonts: Volkhov & Poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Volkhov:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/output.css">
+ <!--Phần thêm font yesteryear và volkhov có nhờ AI
+       Google font yesteryear và Volkhov-->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:ital,wght@0,400;0,700;1,400&family=Yesteryear&display=swap" rel="stylesheet">
 
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            poppins: ['Poppins', 'sans-serif'],
-            volkhov: ['Volkhov', 'serif'],
-          }
-        }
-      }
-    }
-  </script>
+ tailwind.config = {
+ theme: {
+  extend: {
+  fontFamily: {
+    volkhov: ['Volkhov', 'serif'],
+  script: ['Yesteryear', 'cursive'],
+}
+ }
+}
+ }
+</script>
 </head>
 <body class="font-poppins bg-[#F8F9FB] text-[#181E4B]">
 
@@ -34,7 +35,7 @@
     <header class="relative z-10 max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
       <a href="/index.html" class="relative inline-block text-white">
         <h1 class="font-volkhov font-bold text-3xl">Travel</h1>
-        <img src="/assets/img/Vector 1.png" alt="underline" class="w-16 mt-0.5">
+        <img src="/assets/img/Arrow 05.png" alt="underline" class="w-16 mt-0.5">
       </a>
 
       <nav class="hidden md:flex items-center space-x-8 text-white font-medium text-sm">
@@ -74,7 +75,7 @@
           <span>Location</span>
         </button>
 
-        <button class="py-6 px-6 font-medium text-gray-500 hover:text-[#181E4B] hover:bg-gray-200/50 transition flex items-center justify-center gap-2">
+        <button class="py-6 px-6 font-medium text-gray-500 hover:text-[rgb(24,30,75)] hover:bg-gray-200/50 transition flex items-center justify-center gap-2">
           <span>Gallery</span>
         </button>
       </div>
@@ -93,16 +94,16 @@
               <div class="absolute top-3 left-[17px] bottom-3 w-[2px] border-l-2 border-dashed border-[#DF6951]/60 -z-0"></div>
 
               <!-- DAY 1 -->
-              <div class="relative flex items-start gap-5 z-10">
+              <div class="relative flex items-start gap-5 z-10 text-black">
                 <div class="w-9 h-9 bg-[#DF6951] text-white font-bold text-xs rounded-lg flex items-center justify-center shrink-0 shadow-sm">
                   01
                 </div>
                 <div class="space-y-2 pt-1">
                   <h3 class="font-bold text-sm text-[#181E4B]">Day 1: Departure</h3>
-                  <p class="text-[11px] text-gray-500 leading-relaxed">
+                  <p class="text-[11px] leading-relaxed">
                     Qui Tempore Voluptate Qui Quia Commodi Rem Praesentium Alias Et Voluptates Officia Sed Molestiae Sint Et Voluptas Quos. Qui Harum Repudiandae Galisum Dolorem
                   </p>
-                  <ul class="text-[11px] text-gray-600 space-y-1 pt-1">
+                  <ul class="text-[11px] space-y-1 pt-1">
                     <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
                     <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> Breakfast</li>
                     <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
@@ -112,16 +113,16 @@
               </div>
 
               <!-- DAY 2 -->
-              <div class="relative flex items-start gap-5 z-10">
+              <div class="relative flex items-start gap-5 z-10 text-black">
                 <div class="w-9 h-9 bg-[#DF6951] text-white font-bold text-xs rounded-lg flex items-center justify-center shrink-0 shadow-sm">
                   02
                 </div>
                 <div class="space-y-2 pt-1">
                   <h3 class="font-bold text-sm text-[#181E4B]">Day 2: Visiting Zurich, Geneva And Zermatt</h3>
-                  <p class="text-[11px] text-gray-500 leading-relaxed">
+                  <p class="text-[11px] leading-relaxed">
                     Donec Quam Felis, Ultricies Nec, Pellentesque Eu, Pretium Quis, Sem. Nulla Consequat Massa Quis Enim. Donec Pede Justo, Fringilla Vel, Aliquet Nec, Vulputate Eget, Arcu. In Enim Justo, Rhoncus Ut, Imperdiet.
                   </p>
-                  <ul class="text-[11px] text-gray-600 space-y-1 pt-1">
+                  <ul class="text-[11px] space-y-1 pt-1">
                     <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
                     <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> Breakfast</li>
                     <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
@@ -131,16 +132,16 @@
               </div>
 
               <!-- DAY 3 -->
-              <div class="relative flex items-start gap-5 z-10">
+              <div class="relative flex items-start gap-5 z-10 text-black">
                 <div class="w-9 h-9 bg-[#DF6951] text-white font-bold text-xs rounded-lg flex items-center justify-center shrink-0 shadow-sm">
                   03
                 </div>
                 <div class="space-y-2 pt-1">
                   <h3 class="font-bold text-sm text-[#181E4B]">Day 3: Rest</h3>
-                  <p class="text-[11px] text-gray-500 leading-relaxed">
+                  <p class="text-[11px] leading-relaxed">
                     Donec Quam Felis, Ultricies Nec, Pellentesque Eu, Pretium Quis, Sem. Nulla Consequat Massa Quis Enim. Donec Pede Justo, Fringilla Vel, Aliquet Nec, Vulputate Eget, Arcu. In Enim Justo, Rhoncus Ut, Imperdiet.
                   </p>
-                  <ul class="text-[11px] text-gray-600 space-y-1 pt-1">
+                  <ul class="text-[11px] space-y-1 pt-1">
                     <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
                     <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> Breakfast</li>
                   </ul>
@@ -148,16 +149,16 @@
               </div>
 
               <!-- DAY 4 -->
-              <div class="relative flex items-start gap-5 z-10">
+              <div class="relative flex items-start gap-5 z-10 text-black">
                 <div class="w-9 h-9 bg-[#DF6951] text-white font-bold text-xs rounded-lg flex items-center justify-center shrink-0 shadow-sm">
                   04
                 </div>
                 <div class="space-y-2 pt-1">
                   <h3 class="font-bold text-sm text-[#181E4B]">Day 4: Historical Tour</h3>
-                  <p class="text-[11px] text-gray-500 leading-relaxed">
+                  <p class="text-[11px] leading-relaxed">
                     Donec Quam Felis, Ultricies Nec, Pellentesque Eu, Pretium Quis, Sem. Nulla Consequat Massa Quis Enim. Donec Pede Justo, Fringilla Vel, Aliquet Nec, Vulputate Eget, Arcu. In Enim Justo, Rhoncus Ut, Imperdiet.
                   </p>
-                  <ul class="text-[11px] text-gray-600 space-y-1 pt-1">
+                  <ul class="text-[11px] space-y-1 pt-1">
                     <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
                     <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> Breakfast</li>
                     <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-gray-400 rounded-full inline-block"></span> 5 Star Accommodation</li>
@@ -167,13 +168,13 @@
               </div>
 
               <!-- DAY 5 -->
-              <div class="relative flex items-start gap-5 z-10">
+              <div class="relative flex items-start gap-5 z-10 text-black">
                 <div class="w-9 h-9 bg-[#DF6951] text-white font-bold text-xs rounded-lg flex items-center justify-center shrink-0 shadow-sm">
                   05
                 </div>
                 <div class="space-y-2 pt-1">
                   <h3 class="font-bold text-sm text-[#181E4B]">Day 5: Return</h3>
-                  <p class="text-[11px] text-gray-500 leading-relaxed">
+                  <p class="text-[11px] leading-relaxed">
                     Donec Quam Felis, Ultricies Nec, Pellentesque Eu, Pretium Quis, Sem. Nulla Consequat Massa Quis Enim. Donec Pede Justo, Fringilla Vel, Aliquet Nec, Vulputate Eget, Arcu. In Enim Justo, Rhoncus Ut, Venenatis Vitae, Justo. Nullam Dictum Felis Eu Pede Mollis Pretium.
                   </p>
                 </div>
@@ -188,7 +189,7 @@
             <!-- FORM BOOK -->
             <div class="bg-[#F4F4F5] p-6 rounded-2xl">
               <h3 class="font-volkhov font-bold text-2xl text-center mb-2">Book This Tour</h3>
-              <p class="text-[11px] text-gray-500 text-center mb-6 leading-tight">
+              <p class="text-[11px] text-black text-center mb-6 leading-tight">
                 Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt? Quo quidem neque iste expedita est dolo.
               </p>
 
@@ -214,7 +215,7 @@
 
             <!-- ẢNH GRAPHIC BÊN DƯỚI FORM (TRAVEL CONCEPTS) -->
             <div class="flex justify-center pt-4">
-              <img src="/assets/img/Travel_Concepts_2 1.png" alt="Travel Concept" class="max-w-[320px] w-full object-contain">
+              <img src="/assets/img/273 1.png" alt="Travel Concept" class="max-w-[320px] w-full object-contain">
             </div>
 
           </div>
@@ -232,7 +233,7 @@
       <div class="space-y-3">
         <a href="/index.html" class="inline-block">
           <h2 class="font-volkhov font-bold text-2xl text-[#181E4B]">Travel</h2>
-          <img src="/assets/img/Vector 1.png" alt="underline" class="w-14">
+          <img src="/assets/img/Arrow 05.png" alt="underline" class="w-14">
         </a>
         <p class="text-xs text-gray-400">Travel helps companies manage payments easily.</p>
       </div>

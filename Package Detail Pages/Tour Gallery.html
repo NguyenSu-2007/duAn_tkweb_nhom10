@@ -4,25 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tour Gallery - Switzerland</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Google Fonts: Volkhov & Poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Volkhov:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./dist/output.css">
+ <!--Phần thêm font yesteryear và volkhov có nhờ AI
+       Google font yesteryear và Volkhov-->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:ital,wght@0,400;0,700;1,400&family=Yesteryear&display=swap" rel="stylesheet">
 
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            poppins: ['Poppins', 'sans-serif'],
-            volkhov: ['Volkhov', 'serif'],
-          }
-        }
-      }
-    }
-  </script>
+ tailwind.config = {
+ theme: {
+  extend: {
+  fontFamily: {
+    volkhov: ['Volkhov', 'serif'],
+  script: ['Yesteryear', 'cursive'],
+}
+ }
+}
+ }
+</script>
 </head>
 <body class="font-poppins bg-[#F8F9FB] text-[#181E4B]">
 
@@ -34,7 +35,7 @@
     <header class="relative z-10 max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
       <a href="/index.html" class="relative inline-block text-white">
         <h1 class="font-volkhov font-bold text-3xl">Travel</h1>
-        <img src="/assets/img/Vector 1.png" alt="underline" class="w-16 mt-0.5">
+        <img src="/assets/img/Arrow 05.png" alt="underline" class="w-16 mt-0.5">
       </a>
 
       <nav class="hidden md:flex items-center space-x-8 text-white font-medium text-sm">
@@ -51,13 +52,13 @@
 
     <div class="relative z-10 flex flex-col items-center justify-center h-[340px] text-white text-center">
       <span class="uppercase tracking-[0.2em] text-xs font-semibold mb-1 opacity-90">EXPLORE</span>
-      <h2 class="font-volkhov italic text-6xl md:text-7xl">Landscapes</h2>
+      <h2 class="font-script italic text-6xl md:text-7xl">Landscapes</h2>
     </div>
   </div>
 
   <!-- 2. MAIN CONTENT AREA -->
   <main class="max-w-5xl mx-auto px-4 -mt-20 relative z-20 pb-20">
-    <div class="bg-white rounded-3xl shadow-xl overflow-hidden relative">
+    <div class="bg-white   shadow-xl overflow-hidden relative">
       
       <!-- THANH TABS (Tab Gallery Active) -->
       <div class="grid grid-cols-2 md:grid-cols-4 bg-[#F8F9FA] border-b border-gray-100">
@@ -91,35 +92,35 @@
               <div class="grid grid-cols-12 gap-3">
                 <!-- Cột trái: 3 Ảnh xếp chồng -->
                 <div class="col-span-5 flex flex-col gap-3">
-                  <div class="h-28 rounded-xl overflow-hidden shadow-sm">
+                  <div class="h-28 overflow-hidden shadow-sm">
                     <img src="/assets/img/400.jpg" alt="Gallery 400" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-28 rounded-xl overflow-hidden shadow-sm">
+                  <div class="h-28 overflow-hidden shadow-sm">
                     <img src="/assets/img/500.jpg" alt="Gallery 500" class="w-full h-full object-cover">
                   </div>
-                  <div class="h-28 rounded-xl overflow-hidden shadow-sm">
+                  <div class="h-28 overflow-hidden shadow-sm">
                     <img src="/assets/img/600.jpg" alt="Gallery 600" class="w-full h-full object-cover">
                   </div>
                 </div>
 
                 <!-- Cột phải: 1 Ảnh dọc cao -->
-                <div class="col-span-7 h-[348px] rounded-xl overflow-hidden shadow-sm">
+                <div class="col-span-7 h-[348px] overflow-hidden shadow-sm">
                   <img src="/assets/img/700.jpg" alt="Gallery 700" class="w-full h-full object-cover">
                 </div>
               </div>
 
               <!-- HÀNG 2: 2 Ảnh ngang -->
               <div class="grid grid-cols-12 gap-3">
-                <div class="col-span-8 h-32 rounded-xl overflow-hidden shadow-sm">
+                <div class="col-span-8 h-32 overflow-hidden shadow-sm">
                   <img src="/assets/img/800.png" alt="Gallery 800" class="w-full h-full object-cover">
                 </div>
-                <div class="col-span-4 h-32 rounded-xl overflow-hidden shadow-sm">
+                <div class="col-span-4 h-32 overflow-hidden shadow-sm">
                   <img src="/assets/img/900.jpg" alt="Gallery 900" class="w-full h-full object-cover">
                 </div>
               </div>
 
               <!-- HÀNG 3: 1 Ảnh ngang rộng full chiều rộng cột -->
-              <div class="w-full h-36 rounded-xl overflow-hidden shadow-sm">
+              <div class="w-full h-36 overflow-hidden shadow-sm">
                 <img src="/assets/img/300.png" alt="Gallery 300" class="w-full h-full object-cover">
               </div>
             </div>
@@ -140,7 +141,7 @@
           <div class="lg:col-span-5 flex flex-col justify-between space-y-10">
             
             <!-- FORM BOOK -->
-            <div class="bg-[#F4F4F5] p-6 rounded-2xl">
+            <div class="bg-[#F4F4F5] p-6">
               <h3 class="font-volkhov font-bold text-2xl text-center mb-2">Book This Tour</h3>
               <p class="text-[11px] text-gray-500 text-center mb-6 leading-tight">
                 Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt? Quo quidem neque iste expedita est dolo.
@@ -168,7 +169,7 @@
 
             <!-- ẢNH GRAPHIC BÊN DƯỚI FORM (TRAVEL CONCEPTS) -->
             <div class="flex justify-center pt-4">
-              <img src="/assets/img/Travel_Concepts_2 1.png" alt="Travel Concept" class="max-w-[320px] w-full object-contain">
+              <img src="/assets/img/273 1.png" alt="Travel Concept" class="max-w-[320px] w-full object-contain">
             </div>
 
           </div>
@@ -191,7 +192,7 @@
       <div class="space-y-3">
         <a href="/index.html" class="inline-block">
           <h2 class="font-volkhov font-bold text-2xl text-[#181E4B]">Travel</h2>
-          <img src="/assets/img/Vector 1.png" alt="underline" class="w-14">
+          <img src="/assets/img/Arrow 05.png" alt="underline" class="w-14">
         </a>
         <p class="text-xs text-gray-400">Travel helps companies manage payments easily.</p>
       </div>

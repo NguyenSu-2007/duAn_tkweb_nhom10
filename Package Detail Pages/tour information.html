@@ -4,25 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tour Detail - Switzerland</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Google Fonts: Volkhov & Poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Volkhov:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="./dist/output.css">
+   <!--Phần thêm font yesteryear và volkhov có nhờ AI
+       Google font yesteryear và Volkhov-->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:ital,wght@0,400;0,700;1,400&family=Yesteryear&display=swap" rel="stylesheet">
 
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            poppins: ['Poppins', 'sans-serif'],
-            volkhov: ['Volkhov', 'serif'],
-          }
-        }
-      }
-    }
-  </script>
+ tailwind.config = {
+ theme: {
+  extend: {
+  fontFamily: {
+    volkhov: ['Volkhov', 'serif'],
+  script: ['Yesteryear', 'cursive'],
+}
+ }
+}
+ }
+</script>
 </head>
 <body class="font-poppins bg-[#F8F9FB] text-[#181E4B]">
 
@@ -34,13 +35,13 @@
     <header class="relative z-10 max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
       <!-- Logo -->
       <a href="/index.html" class="relative inline-block text-white">
-        <h1 class="font-volkhov font-bold text-3xl">Travel</h1>
+        <h1 class=" font-bold text-3xl">Travel</h1>
         <img src="/assets/img/Arrow 05.png" alt="underline" class="w-16 mt-0.5">
       </a>
 
       <!-- Menu -->
       <nav class="hidden md:flex items-center space-x-8 text-white font-medium text-sm">
-        <a href="/index.html" class="hover:text-[#DF6951] transition">Home</a>
+        <a href="/index.html"font-volkhov class="hover:text-[#DF6951] transition">Home</a>
         <a href="/about.html" class="hover:text-[#DF6951] transition">About</a>
         <a href="#" class="hover:text-[#DF6951] transition">Services</a>
         <a href="/tours.html" class="hover:text-[#DF6951] transition">Upcoming Packages</a>
@@ -54,7 +55,7 @@
     <!-- Title banner -->
     <div class="relative z-10 flex flex-col items-center justify-center h-[340px] text-white text-center">
       <span class="uppercase tracking-[0.2em] text-xs font-semibold mb-1 opacity-90">EXPLORE</span>
-      <h2 class="font-volkhov italic text-6xl md:text-7xl">Landscapes</h2>
+      <h2 class="font-script italic text-6xl md:text-7xl">Landscapes</h2>
     </div>
   </div>
 
@@ -100,7 +101,7 @@
           </div>
 
           <!-- Mô tả ngắn -->
-          <p class="text-xs text-gray-500 leading-relaxed">
+          <p class="text-xs text-black leading-relaxed">
           Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt? Quo quidem neque iste expedita est dolor similique ut quasi maxime ut 
           deserunt autem At praesentium voluptatem aut libero nisi. Et eligendi sint ab cumque veritatis aut provident aliquam. Aut aspernatur consequuntur eum quaerat 
           distinctio ut inventore aliquid et quasi alias ut rerum suscipit et nihil deleniti. Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut 
@@ -112,29 +113,29 @@
           <div class="space-y-3 pt-2 text-xs">
             <div class="grid grid-cols-12">
               <span class="col-span-4 font-bold text-[#DF6951]">Destination</span>
-              <span class="col-span-8 text-gray-600">: Zurich, Switzerland</span>
+              <span class="col-span-8 text-black">: Zurich, Switzerland</span>
             </div>
             <div class="grid grid-cols-12">
               <span class="col-span-4 font-bold text-[#DF6951]">Departure</span>
-              <span class="col-span-8 text-gray-600">: Main Square, New City</span>
+              <span class="col-span-8 text-black">: Main Square, New City</span>
             </div>
             <div class="grid grid-cols-12">
               <span class="col-span-4 font-bold text-[#DF6951]">Departure Time</span>
-              <span class="col-span-8 text-gray-600">: Approximately 08 : 10 AM</span>
+              <span class="col-span-8 text-black">: Approximately 08 : 10 AM</span>
             </div>
             <div class="grid grid-cols-12">
               <span class="col-span-4 font-bold text-[#DF6951]">Return Time</span>
-              <span class="col-span-8 text-gray-600">: Approximately 07 : 20 PM</span>
+              <span class="col-span-8 text-black">: Approximately 07 : 20 PM</span>
             </div>
             <div class="grid grid-cols-12">
               <span class="col-span-4 font-bold text-[#DF6951]">Dress Code</span>
-              <span class="col-span-8 text-gray-600">: Casual, comfortable and light</span>
+              <span class="col-span-8 text-black">: Casual, comfortable and light</span>
             </div>
 
             <!-- Not Included -->
             <div class="grid grid-cols-12 pt-2">
               <span class="col-span-4 font-bold text-[#DF6951]">Not Included</span>
-              <div class="col-span-8 grid grid-cols-2 gap-2 text-gray-600">
+              <div class="col-span-8 grid grid-cols-2 gap-2 text-black">
                 <span>Gallery Ticket</span>
                 <span>Lunch</span>
               </div>
@@ -143,7 +144,7 @@
             <!-- Included -->
             <div class="grid grid-cols-12 pt-2">
               <span class="col-span-4 font-bold text-[#DF6951]">Included</span>
-              <div class="col-span-8 grid grid-cols-2 gap-2 text-gray-600">
+              <div class="col-span-8 grid grid-cols-2 gap-2 text-black">
                 <span>5 star Accommodations</span>
                 <span>Airport Transfer</span>
                 <span>Breakfast</span>
@@ -185,7 +186,7 @@
       <!-- 3. SECTION "FROM OUR GALLERY" -->
       <div class="mt-16 pt-10 border-t border-gray-100 p-6 md:p-10">
         <h2 class="font-volkhov font-bold text-3xl mb-2">From our gallery</h2>
-        <p class="text-xs text-gray-500 max-w-lg mb-8 leading-relaxed">
+        <p class="text-xs text-black max-w-lg mb-8 leading-relaxed">
         Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt? Quo quidem neque iste expedita est dolor similique ut quasi maxime ut deserunt autem At praesentium voluptatem aut libero nisi.
         </p>
 

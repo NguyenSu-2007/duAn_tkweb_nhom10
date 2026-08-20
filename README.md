@@ -45,22 +45,22 @@ npm run dev
 
 ---
 
-## 3. Cấu trúc thư mục dự án
+## 4. Cấu trúc thư mục dự án
 
-├── index.html                           # Trang chủ & Giao diện Modal Build Pac
-├── about.html                           # Trang giới thiệu thông tin dự án
-├── package-archive.html                 # Trang danh sách tour và bộ lọc sản phẩm
-├── Package-Detail-Pages/                # Thư mục chứa các trang chi tiết tour
-│   ├── tour information.html            # Chi tiết tour - Tab Thông tin tổng quan
-│   ├── tour plan.html                   # Chi tiết tour - Tab Lịch trình chuyến đi
-│   ├── tour location.html               # Chi tiết tour - Tab Vị trí địa lý
-│   └── Tour Gallery.html                # Chi tiết tour - Tab Thư viện hình ảnh
-├── src/
-│   └── input.css                        # Token và component CSS gốc của Tailwind
-├── dist/
-│   └── output.css                       # File CSS thành phẩm sau khi build (KHÔNG SỬA TAY)
-├── js/
-│   ├── main.js                          # File kích hoạt script chính cho toàn
-(booking.js buil-package.js ) 
+*   **Các trang giao diện chính (HTML):**
+    *   `index.html`: Trang chủ & Giao diện Modal Build Package.
+    *   `about.html`: Trang giới thiệu thông tin dự án.
+    *   `package-archive.html`: Trang danh sách tour và bộ lọc sản phẩm.
+*   **`Package-Detail-Pages/` (Các trang chi tiết tour):**
+    *   `tour information.html`: Tab Thông tin tổng quan.
+    *   `tour plan.html`: Tab Lịch trình chuyến đi.
+    *   `tour location.html`: Tab Vị trí địa lý.
+    *   `Tour Gallery.html`: Tab Thư viện hình ảnh.
+*   **Định dạng và Giao diện (CSS):**
+    *   `src/input.css`: Token và component CSS gốc của Tailwind.
+    *   `dist/output.css`: File CSS thành phẩm sau khi build *(Không sửa tay)*.
+*   **Kịch bản điều khiển (`js/`):**
+    *   `main.js`: Điểm khởi động chính, kích hoạt script toàn trang.( booking.js filter.js)
+ 
 
      

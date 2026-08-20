@@ -2,7 +2,7 @@
 
 Dự án **Travel Booking** — ứng dụng trực tuyến hỗ trợ đặt tour du lịch và tùy chỉnh gói chuyến đi.
 
-*   **URL bản chạy công khai:** *dán link GitHub Pages của bạn vào đúng dòng này.*
+*   **URL bản chạy công khai:** *https://nguyensu-2007.github.io/duAn_tkweb_nhom10/.*
 ### 👥 Đối tượng hướng đến
 *   **Khách du lịch tự túc:** Những người muốn chủ động lên kế hoạch và tìm kiếm các gói tour có sẵn.
 *   **Người thích cá nhân hóa lịch trình:** Người dùng có nhu cầu tự thiết kế, tùy chỉnh gói dịch vụ (Build Package) theo sở thích và ngân sách riêng.

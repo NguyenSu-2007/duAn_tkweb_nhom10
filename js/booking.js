@@ -1,60 +1,40 @@
-export function initBooking(){ 
-  const form=document.getElementById("bookingForm"); 
-  if(!form)return; 
-  const email=document.getElementById("bookingEmail"); 
-  const confirmEmail=document.getElementById("confirmEmail"); 
-  const phone=document.getElementById("bookingPhone"); 
-  const date=document.getElementById("bookingDate"); 
-  const tickets=document.getElementById("bookingTickets"); 
-  const message=document.getElementById("bookingMessage"); 
-  const check=document.getElementById("checkAvailability"); 
-  const total=document.getElementById("totalPrice"); 
+export function initBooking() {
+  const form = document.getElementById("bookingForm");
+  if (!form) return;
 
-  function updateTotal(){ 
-    const amount=Number(tickets.value)||0; 
-    total.textContent=`$${amount*100}`; 
-  } 
+  const $ = id => document.getElementById(id);
+  const [email, confirm, phone, date, tickets, msg, total] = [
+    $("bookingEmail"), $("confirmEmail"), $("bookingPhone"), 
+    $("bookingDate"), $("bookingTickets"), $("bookingMessage"), $("totalPrice")
+  ];
 
-  function showMessage(text,type="error"){ 
-    message.textContent=text; 
-    message.className=`text-xs ${type==="error"?"text-red-500":"text-green-500"}`; 
-  } 
+  const showMsg = (txt, type = "error") => {
+    msg.textContent = txt;
+    msg.className = `text-xs ${type === "error" ? "text-red-500" : "text-green-500"}`;
+  };
 
-  tickets.addEventListener("input",updateTotal); 
-  updateTotal(); 
+  const updateTotal = () => total && (total.textContent = `$${(Number(tickets?.value) || 0) * 100}`);
+  tickets?.addEventListener("input", updateTotal);
+  updateTotal();
 
-  check?.addEventListener("click",()=>{ 
-    showMessage("This tour is available!","success"); 
-  }); 
+  $("checkAvailability")?.addEventListener("click", () => showMsg("This tour is available!", "success"));
 
-  form.addEventListener("submit",e=>{ 
-    e.preventDefault(); 
-    const emailValue=email.value.trim(); 
-    const confirmEmailValue=confirmEmail.value.trim(); 
-    console.log("Email:",emailValue); 
-    console.log("Confirm:",confirmEmailValue); 
+  form.addEventListener("submit", e => {
+    e.preventDefault();
 
-    if(!form.checkValidity()){ 
-      showMessage("Please fill in all required fields."); 
-      return; 
-    } 
+    if (!form.checkValidity()) return showMsg("Please fill in all required fields.");
 
-    if(!/^[0-9]{9,11}$/.test(phone.value.trim())){ 
-      showMessage("Please enter a valid phone number."); 
-      return; 
-    } 
+    const emailVal = email.value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) return showMsg("Invalid email format.");
+    if (emailVal !== confirm.value.trim()) return showMsg("Emails do not match.");
 
-    // ĐÃ CẬP NHẬT: Chấp nhận cả dấu - và /
-    if(!/^\d{2}[-/]\d{2}[-/]\d{4}$/.test(date.value.trim())){ 
-      showMessage("Date must be in dd/mm/yyyy or dd-mm-yyyy format."); 
-      return; 
-    } 
+    if (!/^[0-9]{9,11}$/.test(phone.value.trim())) return showMsg("Please enter a valid phone number.");
 
-    if(Number(tickets.value)<1){ 
-      showMessage("Number of tickets must be at least 1."); 
-      return; 
-    } 
+    if (!/^\d{2}[-/]\d{2}[-/]\d{4}$/.test(date.value.trim())) return showMsg("Date must be in dd/mm/yyyy or dd-mm-yyyy format.");
 
-    showMessage(`Your tour has been booked successfully! Total: $${Number(tickets.value)*100}`,"success"); 
-  }); 
+    const ticketCount = Number(tickets.value);
+    if (ticketCount < 1) return showMsg("Number of tickets must be at least 1.");
+
+    showMsg(`Your tour has been booked successfully! Total: $${ticketCount * 100}`, "success");
+  });
 }

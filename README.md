@@ -1,6 +1,10 @@
 # Travel Booking Website
 
 Dự án **Travel Booking** — ứng dụng trực tuyến hỗ trợ đặt tour du lịch và tùy chỉnh gói chuyến đi.
+# Danh sách thành viên:
++ Nguyễn Phạm Chí Sự
++ Võ Phạm Quang Anh
++ Phạm Gia Khiêm
 
 *   **URL bản chạy công khai:** *https://nguyensu-2007.github.io/duAn_tkweb_nhom10/.*
 ### 👥 Đối tượng hướng đến

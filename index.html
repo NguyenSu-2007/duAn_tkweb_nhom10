@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel - Sightseeing Tours</title>
+  <title>Homepage - Tour booking</title>
   <link rel="stylesheet" href="./dist/output.css">
    <!--Phần thêm font yesteryear và volkhov có nhờ AI
        Google font yesteryear và Volkhov-->
@@ -38,33 +38,48 @@
     <nav aria-label="Main Navigation" class="hidden md:flex items-center gap-8 font-medium text-sm text-white">
       <a href="index.html" class="text-[#DF6951] font-semibold">Home</a>
       <a href="about.html" class="hover:text-[#DF6951] transition-colors">About</a>
-      
-      <!-- DROPDOWN SERVICES (Đã thêm Musical Events & Build Package) -->
+      <a href="javascript:void(0)" onclick="openModal()" class="hover:text-[#DF6951] transition-colors">Build Package</a>
       <div class="relative group cursor-pointer py-2">
-        <span class="flex items-center gap-1 hover:text-[#DF6951] transition-colors">
-          Services
+        <span class="flex items-center gap-1 hover:text-[#DF6951] transition-colors">Upcomming Packages
           <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </span>
-       <div class="absolute top-full left-0 hidden group-hover:block w-[229px] bg-[#D9D9D9]/58 backdrop-blur-[15px] text-[#181E4B] rounded-[16px] shadow-lg py-4 px-4 border border-white/20 z-50">
-          <a href="tours.html" class="text-white block py-2 text-xs rounded-lg">Honeymoon Packages</a>
-          <a href="tours.html" class="text-white block py-2 text-xs rounded-lg">Tours Packages</a>
-          <a href="tours.html" class="text-white block py-2 text-xs rounded-lg">Musical Events</a>
-          
-          <!-- Nút kích hoạt Modal Build Package -->
-          <a href="javascript:void(0)" onclick="openModal()" class="text-white block py-2 text-xs font-semibold text-[#181E4B] hover:bg-orange-50 hover:text-[#DF6951] rounded-lg">Build Package</a>
+        <div class="absolute top-full left-0 hidden group-hover:block w-[229px] bg-[#D9D9D9]/58 backdrop-blur-[15px] text-[#181E4B] rounded-[16px] shadow-lg py-4 px-4 border border-white/20 z-50">
+          <a href="package-archive.html" class="text-white block py-2 text-xs rounded-lg">Packages Archive Page</a>
+          <a href="/Package-Detail-Pages/tour information.html" class="text-white block py-2 text-xs rounded-lg">Tour Information</a>
+          <a href="/Package-Detail-Pages/tour plan.html" class="text-white block py-2 text-xs rounded-lg">Tour Plan</a>
+          <a href="/Package-Detail-Pages/tour location.html" class="text-white block py-2 text-xs rounded-lg">Tour Location</a>
+          <a href="/Package-Detail-Pages/Tour Gallery.html" class="text-white block py-2 text-xs rounded-lg">Tour Gallery</a>
         </div>
       </div>
-
-      <a href="tours.html" class="hover:text-[#DF6951] transition-colors">Upcoming Packages</a>
     </nav>
 
     <div class="hidden md:block">
-      <a href="contact.html" class="bg-[#DF6951] hover:bg-[#c85741] text-white text-sm font-medium px-6 py-2.5 rounded-lg shadow-md transition-all inline-block">
-        Get in Touch
-      </a>
+      <a href="contact.html" class="bg-[#DF6951] hover:bg-[#c85741] text-white text-sm font-medium px-6 py-2.5 rounded-lg shadow-md transition-all inline-block">Get in Touch</a>
     </div>
+
+    <button id="menu-btn" type="button" class="md:hidden text-white text-3xl focus:outline-none" aria-label="Open menu">☰</button>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden mt-4 mx-2 rounded-2xl bg-black/50 backdrop-blur-md p-5">
+    <nav class="flex flex-col gap-4 text-white text-sm">
+      <a href="index.html" class="text-[#DF6951] font-semibold">Home</a>
+      <a href="about.html" class="hover:text-[#DF6951]">About</a>
+      <a href="javascript:void(0)" onclick="openModal()" class="hover:text-[#DF6951]">Build Package</a>
+      <a href="package-archive.html" class="hover:text-[#DF6951]">Upcomming Packages</a>
+      <a href="/Package-Detail-Pages/tour information.html" class="pl-4 text-sm hover:text-[#DF6951]">Tour Information</a>
+      <a href="/Package-Detail-Pages/tour plan.html" class="pl-4 text-sm hover:text-[#DF6951]">Tour Plan</a>
+      <a href="/Package-Detail-Pages/tour location.html" class="pl-4 text-sm hover:text-[#DF6951]">Tour Location</a>
+      <a href="/Package-Detail-Pages/Tour Gallery.html" class="pl-4 text-sm hover:text-[#DF6951]">Tour Gallery</a>
+      <a href="contact.html" class="bg-[#DF6951] hover:bg-[#c85741] text-white text-center px-5 py-2.5 rounded-lg mt-2">Get in Touch</a>
+    </nav>
   </div>
 </header>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+</script>
 
 <main id="main">
 
@@ -199,7 +214,7 @@
             <div class="flex gap-4">
               <div class="w-12 h-12 rounded-xl bg-[#006380] text-white flex items-center justify-center shrink-0 font-bold">3</div>
               <div>
-                <h3 class="font-bold text-[#181E4B]">Let’s Go</h3>
+                <h3 class="font-bold text-[#181E4B]">Let's Go</h3>
                 <p class="text-xs text-[#5E6282]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
@@ -466,9 +481,9 @@
   <div class="relative w-full max-w-[480px] bg-white rounded-2xl shadow-2xl p-6 md:p-8 max-h-[90vh] overflow-y-auto">
     
     <!-- Nút Close (X) -->
-    <button type="button" class="absolute top-5 right-5 text-gray-400 hover:text-gray-600 text-xl font-bold transition">
-      &times;
-    </button>
+   <button type="button" onclick="closeModal()" class="absolute top-5 right-5 text-gray-400 hover:text-gray-600 text-xl font-bold transition">
+  &times;
+</button>
 
     <!-- Modal Title -->
     <h2 class="font-volkhov text-2xl font-bold text-[#181E4B] text-center mb-6">Build Your Own Package</h2>

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Packages Archive - Travel</title>
+  <title>Packages Archive - Tour booking</title>
     <link rel="stylesheet" href="./dist/output.css">
-    //Phần thêm font yesteryear và volkhov có nhờ AI
-      // Google font yesteryear
+    <!--Phần thêm font yesteryear và volkhov có nhờ AI
+       Google font yesteryear-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:ital,wght@0,400;0,700;1,400&family=Yesteryear&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS Play CDN -->
@@ -26,29 +26,57 @@
 <body class="font-poppins bg-[#F7F7F7] text-[#181E4B] antialiased min-h-screen flex flex-col justify-between">
 
   <!-- ==================== HEADER / NAVIGATION ==================== -->
-  <header class="absolute top-0 left-0 right-0 z-50 py-6 px-8 max-w-[1400px] mx-auto flex items-center justify-between">
-    <!-- Logo -->
-       <a href="index.html" class="text-white font-volkhov relative text-3xl font-bold tracking-wide">
-        Travel
-        <img src="assets/img/Arrow 05.png" alt="" class="w-20 absolute -bottom-4 -right-6">
-      </a>
+  <header class="absolute top-0 left-0 right-0 z-50 py-6 px-4 md:px-8 max-w-[1400px] mx-auto flex items-center justify-between">
+  <a href="index.html" class="text-white font-volkhov relative text-2xl md:text-3xl font-bold tracking-wide">
+    Travel
+    <img src="assets/img/Arrow 05.png" alt="" class="w-20 absolute -bottom-4 -right-6">
+  </a>
 
-    <!-- Menu Navigation -->
-    <nav class="hidden md:flex items-center space-x-10 text-white font-medium text-sm">
-      <a href="#" class="hover:text-[#DF6951] transition">Home</a>
-      <a href="#" class="hover:text-[#DF6951] transition">About</a>
-      <a href="#" class="hover:text-[#DF6951] transition flex items-center gap-1">
-        Services 
-        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-      </a>
-      <a href="#" class="hover:text-[#DF6951] transition">Upcoming Packages</a>
-    </nav>
+  <nav aria-label="Main Navigation" class="hidden md:flex items-center gap-8 font-medium text-sm text-white">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="hover:text-[#DF6951] transition-colors">About</a>
+    <a href="javascript:void(0)" onclick="openModal()" class="hover:text-[#DF6951] transition-colors">Build Package</a>
+    <div class="relative group cursor-pointer py-2">
+      <span class="flex items-center gap-1 hover:text-[#DF6951] transition-colors">
+        Upcomming Packages
+        <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </span>
+      <div class="absolute top-full left-0 hidden group-hover:block w-[229px] bg-[#D9D9D9]/58 backdrop-blur-[15px] text-[#181E4B] rounded-[16px] shadow-lg py-4 px-4 border border-white/20 z-50">
+        <a href="package-archive.html" class="text-white block py-2 text-xs rounded-lg">Packages Archive Page</a>
+        <a href="/Package-Detail-Pages/tour information.html" class="text-white block py-2 text-xs rounded-lg">Tour Information</a>
+        <a href="/Package-Detail-Pages/tour plan.html" class="text-white block py-2 text-xs rounded-lg">Tour Plan</a>
+        <a href="/Package-Detail-Pages/tour location.html" class="text-white block py-2 text-xs rounded-lg">Tour Location</a>
+        <a href="/Package-Detail-Pages/Tour Gallery.html" class="text-white block py-2 text-xs rounded-lg">Tour Gallery</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Action Button -->
-    <a href="#" class="bg-[#DF6951] text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-[#c85741] transition shadow-md">
-      Get in Touch
-    </a>
-  </header>
+  <a href="#" class="hidden md:inline-block bg-[#DF6951] text-white text-sm font-semibold px-6 py-3 rounded-xl hover:bg-[#c85741] transition shadow-md">
+    Get in Touch
+  </a>
+
+  <button id="menu-btn" type="button" class="md:hidden text-white text-3xl focus:outline-none" aria-label="Open menu">☰</button>
+</header>
+
+<div id="mobile-menu" class="hidden md:hidden absolute top-20 left-4 right-4 z-50 rounded-2xl bg-black/50 backdrop-blur-md p-5 text-white">
+  <nav class="flex flex-col gap-4 text-sm">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="hover:text-[#DF6951]">About</a>
+    <a href="javascript:void(0)" onclick="openModal()" class="hover:text-[#DF6951]">Build Package</a>
+    <a href="package-archive.html" class="hover:text-[#DF6951]">Upcomming Packages</a>
+    <a href="/Package-Detail-Pages/tour information.html" class="pl-4 hover:text-[#DF6951]">Tour Information</a>
+    <a href="/Package-Detail-Pages/tour plan.html" class="pl-4 hover:text-[#DF6951]">Tour Plan</a>
+    <a href="/Package-Detail-Pages/tour location.html" class="pl-4 hover:text-[#DF6951]">Tour Location</a>
+    <a href="/Package-Detail-Pages/Tour Gallery.html" class="pl-4 hover:text-[#DF6951]">Tour Gallery</a>
+    <a href="#" class="bg-[#DF6951] text-white text-center px-5 py-2.5 rounded-lg mt-2">Get in Touch</a>
+  </nav>
+</div>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+</script>
 
   <!-- ==================== HERO BANNER ==================== -->
   <section class="relative h-[550px] bg-cover bg-center flex items-center justify-center" style="background-image: url('assets/img/Rectangle 19290.png');">
@@ -349,7 +377,186 @@
       </div>
     </div>
   </footer>
+ <!-- ==================== MODAL OVERLAY & POPUP ==================== -->
+<div id="build-package-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+  
+  <!-- POPUP CARD -->
+  <div class="relative w-full max-w-[480px] bg-white rounded-2xl shadow-2xl p-6 md:p-8 max-h-[90vh] overflow-y-auto">
+    
+    <!-- Nút Close (X) -->
+  <button type="button" onclick="closeModal()" class="absolute top-5 right-5 text-gray-400 hover:text-gray-600 text-xl font-bold transition">
+  &times;
+</button>
 
+    <!-- Modal Title -->
+    <h2 class="font-volkhov text-2xl font-bold text-[#181E4B] text-center mb-6">Build Your Own Package</h2>
+
+    <form class="space-y-4">
+      
+      <!-- Input 1: Country / Region -->
+      <div class="relative border border-gray-200 rounded-xl p-2.5 focus-within:border-[#DF6951] transition">
+        <label class="block text-[10px] text-gray-400 font-medium">Enter destination (country, region or city)</label>
+        <div class="flex items-center justify-between mt-0.5">
+          <input type="text" value="Switzerland" class="w-full text-sm font-medium text-[#181E4B] focus:outline-none bg-transparent">
+          <!-- Info Icon -->
+          <svg class="w-4 h-4 text-gray-400 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        </div>
+      </div>
+
+      <!-- Input 2: Specific Place -->
+      <div class="relative border border-gray-200 rounded-xl p-2.5 focus-within:border-[#DF6951] transition">
+        <label class="block text-[10px] text-gray-400 font-medium">Enter destination (country, region or city)</label>
+        <div class="flex items-center justify-between mt-0.5">
+          <input type="text" value="Lauterbrunnen" class="w-full text-sm font-medium text-[#181E4B] focus:outline-none bg-transparent">
+          <!-- Info Icon -->
+          <svg class="w-4 h-4 text-gray-400 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        </div>
+      </div>
+
+      <!-- + Add destination link -->
+      <div>
+        <button type="button" class="text-xs text-[#DF6951] font-semibold hover:underline">+ Add destination</button>
+      </div>
+
+      <!-- Row: Date Range & Guests -->
+      <div class="grid grid-cols-2 gap-3 pt-1">
+        <!-- Date Range -->
+        <div class="border border-gray-200 rounded-xl p-2.5 flex flex-col justify-between">
+          <label class="block text-[10px] text-gray-400 font-medium">Date Range</label>
+          <div class="flex items-center justify-between text-xs font-semibold text-[#181E4B] mt-1">
+            <span>Start Date</span>
+            <span class="text-gray-400">&rarr;</span>
+            <span class="text-gray-400 font-normal">End Date</span>
+          </div>
+        </div>
+
+        <!-- Guests Dropdown -->
+        <div class="border border-gray-200 rounded-xl p-2.5 flex flex-col justify-between">
+          <label class="block text-[10px] text-gray-400 font-medium">Guests</label>
+          <div class="flex items-center justify-between mt-1">
+            <span class="text-xs font-semibold text-[#181E4B]">2 adults</span>
+            <svg class="w-3.5 h-3.5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activities Preferences (Optional) -->
+      <div class="pt-2">
+        <label class="block text-xs font-bold text-[#DF6951] mb-3">Activities preferences (optional)</label>
+
+        <!-- Grid 3 cột Checkbox -->
+        <div class="grid grid-cols-4 gap-y-2.5 gap-x-1 text-[11px] text-gray-600">
+          
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Culture</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Outdoors</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Relaxing</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Wildlife</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Romantic</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Religious</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Hiking</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Musical</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Shopping</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" checked class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Business</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Museums</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Party</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Traditions</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Walks</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Fishing</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Cruise</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" checked class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Guide</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer">
+            <input type="checkbox" checked class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Healthcare</span>
+          </label>
+
+          <label class="flex items-center gap-1.5 cursor-pointer col-span-2">
+            <input type="checkbox" checked class="w-3.5 h-3.5 accent-[#DF6951] rounded">
+            <span>Accommodation</span>
+          </label>
+
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="pt-4 flex justify-center">
+        <button type="button" class="bg-[#DF6951] text-white px-8 py-3 rounded-xl font-bold text-xs shadow-md shadow-[#DF6951]/30 hover:bg-[#c85741] transition">
+          Build Package
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+<!-- Nhúng file JS riêng -->
+  <script src="script.js"></script>
   
 </body>
 </html>
